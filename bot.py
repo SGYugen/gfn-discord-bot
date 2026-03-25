@@ -1,23 +1,26 @@
 import discord
 import os
 import requests
-from google import genai
+from openai import OpenAI
 
 TOKEN = os.getenv("TOKEN")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+CEREBRAS_API_KEY = os.getenv("CEREBRAS_API_KEY")
 
-# 🔴 CAMBIA ESTO POR TU REPO REAL (opcional)
+# 🔴 opcional (tu base)
 URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
-# Cliente IA (Gemini)
-client_ai = genai.Client(api_key=GEMINI_API_KEY)
+# Cliente Cerebras
+client_ai = OpenAI(
+    api_key=CEREBRAS_API_KEY,
+    base_url="https://api.cerebras.ai/v1"
+)
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-# 🔍 Obtener base propia
+# 🔍 JSON base
 def obtener_json():
     try:
         res = requests.get(URL_JSON, timeout=5)
@@ -27,32 +30,38 @@ def obtener_json():
     except:
         return {}
 
-# 🧠 IA REAL (Gemini)
+# 🧠 IA (Cerebras)
 def analizar_con_ia(codigo):
     try:
-        response = client_ai.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=f"""
-            El error {codigo} pertenece a GeForce NOW.
+        response = client_ai.chat.completions.create(
+            model="llama3.1-8b",
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"""
+                    El error {codigo} es de GeForce NOW.
 
-            Explica en español con este formato EXACTO:
+                    Dame respuesta en español con este formato:
 
-            Resumen:
-            Explica claramente el problema
+                    Resumen:
+                    Explica el problema
 
-            Soluciones:
-            - solución 1
-            - solución 2
-            - solución 3
+                    Soluciones:
+                    - solución 1
+                    - solución 2
+                    - solución 3
 
-            Sé claro, útil y basado en problemas reales.
-            """
+                    Sé claro y basado en problemas reales.
+                    """
+                }
+            ],
+            max_tokens=300
         )
 
-        return response.text
+        return response.choices[0].message.content
 
     except Exception as e:
-        print("ERROR GEMINI:", e)
+        print("ERROR IA:", e)
         return "⚠️ No pude obtener información en este momento."
 
 @client.event
@@ -78,7 +87,7 @@ async def on_message(message):
 
         data = obtener_json()
 
-        # 🔹 1. RESPUESTA RÁPIDA (JSON)
+        # 🔹 JSON primero
         if codigo in data:
             info = data[codigo]
 
@@ -90,7 +99,6 @@ async def on_message(message):
                 respuesta += f"- {s}\n"
 
         else:
-            # 🔹 2. IA (GEMINI)
             await message.channel.send(f"🔍 Analizando {codigo}...")
 
             ia = analizar_con_ia(codigo)
