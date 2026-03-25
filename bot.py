@@ -1,7 +1,7 @@
 import discord
 import requests
 
-TOKEN = "TU_TOKEN_AQUI"
+TOKEN = "MTQ4NjQzMzM4OTk4MzU2ODA3Mw.GE7q5b.LYRaB17T1_eNpvZfExKgWPiod3BWcswzcIfStE"
 URL_JSON = "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/data/errors.json"
 
 intents = discord.Intents.default()
