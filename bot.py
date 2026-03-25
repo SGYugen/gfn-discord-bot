@@ -1,15 +1,37 @@
 import discord
 import requests
 import os
+import re
 
 TOKEN = os.getenv("TOKEN")
-
-URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
+
+HEADERS = {"User-Agent": "gfn-bot"}
+
+def buscar_en_reddit(codigo):
+    url = f"https://www.reddit.com/r/GeForceNOW/search.json?q={codigo}&restrict_sr=1&limit=3"
+    
+    try:
+        res = requests.get(url, headers=HEADERS)
+        data = res.json()
+    except:
+        return None
+
+    resultados = []
+
+    for post in data["data"]["children"]:
+        titulo = post["data"]["title"]
+        texto = post["data"].get("selftext", "")
+        link = "https://reddit.com" + post["data"]["permalink"]
+
+        resultados.append(f"🔗 {titulo}\n{link}")
+
+    return resultados if resultados else None
+
 
 @client.event
 async def on_ready():
@@ -21,8 +43,8 @@ async def on_message(message):
         return
 
     if "0x" in message.content.lower():
-        codigo = None
 
+        codigo = None
         for palabra in message.content.split():
             if palabra.lower().startswith("0x"):
                 codigo = palabra
@@ -31,22 +53,18 @@ async def on_message(message):
         if not codigo:
             return
 
-        try:
-            data = requests.get(URL_JSON).json()
-        except:
-            await message.channel.send("⚠️ Error al obtener datos")
-            return
+        await message.channel.send(f"🔍 Buscando solución para {codigo}...")
 
-        if codigo in data:
-            info = data[codigo]
+        resultados = buscar_en_reddit(codigo)
 
-            respuesta = f"🔎 **Error: {codigo}**\n"
-            respuesta += f"📌 {info['descripcion']}\n\n💡 Soluciones:\n"
+        if resultados:
+            respuesta = f"💡 Posibles soluciones encontradas en Reddit para {codigo}:\n\n"
+            
+            for r in resultados:
+                respuesta += r + "\n\n"
 
-            for s in info["soluciones"]:
-                respuesta += f"- {s}\n"
         else:
-            respuesta = f"⚠️ Error {codigo} no encontrado.\nSe investigará."
+            respuesta = f"⚠️ No encontré soluciones en Reddit para {codigo}"
 
         await message.channel.send(respuesta)
 
