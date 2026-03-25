@@ -2,7 +2,7 @@ import requests
 import re
 import json
 
-WEBHOOK = "TU_WEBHOOK_DISCORD"
+WEBHOOK = "https://discord.com/api/webhooks/1486444004600971294/H1EenQcf5xbzA0j6k-9QCv9m5xUmFbFOn0RYesxKTMQ6_-SuCSjxVcH2CUnu-8yW-Qx8"
 
 URL = "https://www.reddit.com/r/GeForceNOW/new.json?limit=10"
 HEADERS = {"User-Agent": "gfn-bot"}
