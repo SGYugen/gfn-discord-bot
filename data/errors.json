@@ -1,0 +1,10 @@
+{
+  "0xC0F52132": {
+    "descripcion": "Problema de conexión con servidor",
+    "soluciones": [
+      "Reinicia tu router",
+      "Cambia DNS a 8.8.8.8 o 1.1.1.1",
+      "Prueba otra red"
+    ]
+  }
+}
