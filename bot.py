@@ -1,22 +1,24 @@
 import discord
-import requests
 import os
+import google.generativeai as genai
+import requests
 
 TOKEN = os.getenv("TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# 🔴 CAMBIA ESTO POR TU REPO REAL
+# 🔴 URL DE TU JSON (opcional)
 URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-}
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-# 🔍 Obtener JSON
+
+# 🔍 Obtener base propia
 def obtener_json():
     try:
         res = requests.get(URL_JSON)
@@ -24,66 +26,30 @@ def obtener_json():
     except:
         return {}
 
-# 🧠 Reddit + fallback inteligente
-def analizar_error(codigo):
-    url = f"https://www.reddit.com/r/GeForceNOW/search.json?q={codigo}&restrict_sr=1&sort=relevance&limit=5"
-    
+
+# 🧠 IA (Google Gemini)
+def analizar_con_ia(codigo):
+    prompt = f"""
+    El error {codigo} pertenece a GeForce NOW.
+
+    Investiga y responde en español con este formato:
+
+    Resumen:
+    Explica claramente el problema
+
+    Soluciones:
+    - solución 1
+    - solución 2
+    - solución 3
+
+    Sé directo, útil y basado en problemas reales.
+    """
+
     try:
-        res = requests.get(url, headers=HEADERS)
-        data = res.json()
-        posts = data.get("data", {}).get("children", [])
+        response = model.generate_content(prompt)
+        return response.text
     except:
-        posts = []
-
-    textos = []
-
-    for post in posts:
-        titulo = post["data"].get("title", "")
-        cuerpo = post["data"].get("selftext", "")
-        texto = (titulo + " " + cuerpo).lower()
-        textos.append(texto)
-
-    texto_completo = " ".join(textos)
-
-    # 📌 RESUMEN
-    if any(p in texto_completo for p in ["connect", "conex", "network", "internet"]):
-        resumen = "Problema de conexión o estabilidad con servidores."
-    elif any(p in texto_completo for p in ["login", "auth", "account"]):
-        resumen = "Problema de inicio de sesión o autenticación."
-    elif any(p in texto_completo for p in ["black screen", "pantalla negra", "freeze"]):
-        resumen = "Pantalla negra o congelamiento al iniciar."
-    else:
-        resumen = "Error común en GeForce NOW reportado por la comunidad."
-
-    # 💡 SOLUCIONES
-    soluciones = []
-
-    if any(p in texto_completo for p in ["restart", "reboot", "reiniciar"]):
-        soluciones.append("Reiniciar la aplicación o dispositivo")
-
-    if any(p in texto_completo for p in ["browser", "chrome", "web"]):
-        soluciones.append("Usar la versión web (navegador)")
-
-    if any(p in texto_completo for p in ["vpn", "region", "server"]):
-        soluciones.append("Cambiar de región o desactivar VPN")
-
-    if any(p in texto_completo for p in ["network", "internet", "wifi"]):
-        soluciones.append("Revisar conexión a internet")
-
-    if any(p in texto_completo for p in ["update", "driver"]):
-        soluciones.append("Actualizar aplicación o drivers")
-
-    # 🔴 RESPUESTA GENÉRICA (SI NO HAY NADA)
-    if not soluciones:
-        soluciones = [
-            "Reiniciar la aplicación",
-            "Cerrar sesión y volver a iniciar",
-            "Probar desde navegador (Chrome)",
-            "Revisar conexión a internet",
-            "Cambiar de red o usar datos móviles"
-        ]
-
-    return resumen, soluciones
+        return "⚠️ No pude obtener información en este momento."
 
 
 @client.event
@@ -110,27 +76,24 @@ async def on_message(message):
 
         data = obtener_json()
 
-        # 🔹 1. BASE PROPIA
+        # 🔹 1. RESPUESTA RÁPIDA (JSON)
         if codigo in data:
             info = data[codigo]
 
             respuesta = f"🔎 **Error: {codigo}**\n\n"
-            respuesta += f"📌 **Resumen:**\n{info.get('descripcion', 'Sin descripción')}\n\n"
+            respuesta += f"📌 **Resumen:**\n{info.get('descripcion', '')}\n\n"
             respuesta += "💡 **Soluciones:**\n"
 
             for s in info.get("soluciones", []):
                 respuesta += f"- {s}\n"
 
         else:
-            # 🔹 2. REDDIT + FALLBACK AUTOMÁTICO
-            resumen, soluciones = analizar_error(codigo)
+            # 🔹 2. IA (GEMINI)
+            await message.channel.send(f"🔍 Analizando {codigo}...")
 
-            respuesta = f"🔎 **Error: {codigo}**\n\n"
-            respuesta += f"📌 **Resumen:**\n{resumen}\n\n"
-            respuesta += "💡 **Soluciones:**\n"
+            ia = analizar_con_ia(codigo)
 
-            for s in soluciones:
-                respuesta += f"- {s}\n"
+            respuesta = f"🔎 **Error: {codigo}**\n\n{ia}"
 
         await message.channel.send(respuesta)
 
