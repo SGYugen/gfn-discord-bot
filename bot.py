@@ -2,13 +2,16 @@ import discord
 import os
 import requests
 import json
+import re
+import pandas as pd
 from openai import OpenAI
 
 TOKEN = os.getenv("TOKEN")
 CEREBRAS_API_KEY = os.getenv("CEREBRAS_API_KEY")
 
-# 🔒 CONFIGURACIÓN
+# 🔒 CONFIG
 FORO_TECNICO_ID = 1486483140271931495
+CANAL_RAPIDO_ID = 1486499974119166012  # 👈 CAMBIAR
 ROL_MOD_ID = 1486483938665959596
 
 # IA
@@ -20,7 +23,6 @@ client_ai = OpenAI(
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
-
 tree = discord.app_commands.CommandTree(client)
 
 # =========================
@@ -31,14 +33,7 @@ def cargar_stats():
     try:
         with open("data/stats.json", "r") as f:
             data = json.load(f)
-
-            # 🔒 asegurar que sea dict
-            if isinstance(data, dict):
-                return data
-            else:
-                print("⚠️ stats.json corrupto, reiniciando...")
-                return {}
-
+            return data if isinstance(data, dict) else {}
     except:
         return {}
 
@@ -52,31 +47,64 @@ def registrar_error(codigo):
     guardar_stats(stats)
 
 # =========================
+# 📄 EXCEL NVIDIA
+# =========================
+
+def cargar_excel():
+    try:
+        return pd.read_excel("data/errores.xlsx", engine="openpyxl")
+    except Exception as e:
+        print("ERROR EXCEL:", e)
+        return None
+
+excel_data = cargar_excel()
+
+def buscar_en_excel(texto):
+    if excel_data is None:
+        return None
+
+    texto = str(texto).lower()
+
+    for _, row in excel_data.iterrows():
+        fila = " ".join([str(x).lower() for x in row.values])
+        if texto in fila:
+            return row
+
+    return None
+
+def formatear_excel(row):
+    respuesta = "📄 **Información oficial (NVIDIA):**\n\n"
+    for col in row.index:
+        valor = str(row[col])
+        if valor and valor != "nan":
+            respuesta += f"**{col}:** {valor}\n"
+    return respuesta
+
+# =========================
 # 🧠 IA
 # =========================
 
-def analizar_con_ia(codigo):
+def analizar_con_ia(texto):
     try:
         response = client_ai.chat.completions.create(
             model="llama3.1-8b",
-            messages=[
-                {
-                    "role": "user",
-                    "content": f"""
-                    El error {codigo} es de GeForce NOW.
+            messages=[{
+                "role": "user",
+                "content": f"""
+                Problema en GeForce NOW: {texto}
 
-                    Responde en español:
+                Responde en español:
 
-                    Resumen:
-                    ...
+                Resumen:
+                ...
 
-                    Soluciones:
-                    - ...
-                    - ...
-                    """
-                }
-            ],
-            max_tokens=300
+                Soluciones:
+                - ...
+                - ...
+                - ...
+                """
+            }],
+            max_tokens=600
         )
         return response.choices[0].message.content
     except Exception as e:
@@ -89,10 +117,24 @@ def analizar_con_ia(codigo):
 
 def detectar_codigo(texto):
     texto = texto.lower()
-    for palabra in texto.split():
-        if palabra.startswith("0x") or any(c.isdigit() for c in palabra):
-            return palabra
+
+    match = re.search(r'0x[0-9a-f]+', texto)
+    if match:
+        return match.group()
+
+    match = re.search(r'\b[0-9]{4,}[a-z0-9]*\b', texto)
+    if match:
+        return match.group()
+
     return None
+
+def es_problema(texto):
+    palabras = [
+        "error", "problema", "no funciona", "no inicia",
+        "pantalla negra", "lag", "borroso", "crash",
+        "se cierra", "no carga"
+    ]
+    return any(p in texto.lower() for p in palabras)
 
 # =========================
 # 🚀 READY
@@ -112,40 +154,60 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    # 🔒 Solo foro técnico
-    if not (
+    # 🔒 Foro o canal rápido
+    es_foro = (
         isinstance(message.channel, discord.Thread) and
         message.channel.parent_id == FORO_TECNICO_ID
-    ):
+    )
+
+    es_canal = message.channel.id == CANAL_RAPIDO_ID
+
+    if not (es_foro or es_canal):
         return
 
-    contenido = message.content
+    contenido = message.content.strip()
+
+    if len(contenido) < 8:
+        return
+
     codigo = detectar_codigo(contenido)
 
-    # 🧵 MENSAJE INICIAL DEL HILO
-    if message.id == message.channel.id:
-        if not codigo:
+    # 🧵 hilo sin info
+    if es_foro and message.id == message.channel.id:
+        if not codigo and not es_problema(contenido):
             await message.channel.send(
-                f"{message.author.mention} ⚠️ Por favor incluye un código de error o describe el problema técnico."
+                f"{message.author.mention} ⚠️ Describe mejor el problema o incluye un error."
             )
         return
 
-    # ❌ si no hay código ni contexto
-    if not codigo and len(contenido) < 10:
+    if not codigo and not es_problema(contenido):
         return
 
-    # 🔁 evitar repetir misma respuesta en el hilo
+    # evitar duplicados
     async for msg in message.channel.history(limit=50):
         if msg.author == client.user and codigo and codigo in msg.content:
             return
 
-    # 📊 registrar
-    if codigo:
-        registrar_error(codigo)
+    # 📄 Excel primero
+    excel_resultado = buscar_en_excel(codigo if codigo else contenido)
 
-    await message.channel.send(f"🔍 Analizando...")
+    if excel_resultado is not None:
+        if codigo:
+            registrar_error(codigo)
+
+        respuesta = f"🔎 **Consulta:** {codigo if codigo else 'General'}\n\n"
+        respuesta += formatear_excel(excel_resultado)
+
+        await message.channel.send(respuesta)
+        return
+
+    # 🧠 IA
+    await message.channel.send("🔍 Analizando...")
 
     ia = analizar_con_ia(codigo if codigo else contenido)
+
+    if codigo:
+        registrar_error(codigo)
 
     stats = cargar_stats()
     cantidad = stats.get(codigo, 0) if codigo else 0
@@ -158,50 +220,42 @@ async def on_message(message):
     await message.channel.send(respuesta)
 
 # =========================
-# 🛠️ COMANDOS MOD
+# 🛠️ MOD COMMANDS
 # =========================
 
 def es_mod(user):
     return any(role.id == ROL_MOD_ID for role in user.roles)
 
-@tree.command(name="feedback", description="Lista de errores registrados")
+@tree.command(name="feedback", description="Lista de errores")
 async def feedback(interaction: discord.Interaction):
-
     if not es_mod(interaction.user):
-        await interaction.response.send_message(
-            "❌ No tienes permisos.",
-            ephemeral=True
-        )
+        await interaction.response.send_message("❌ Sin permisos", ephemeral=True)
         return
 
     stats = cargar_stats()
 
     if not stats:
-        await interaction.response.send_message("No hay datos.", ephemeral=True)
+        await interaction.response.send_message("No hay datos", ephemeral=True)
         return
 
     lista = "\n".join(stats.keys())
 
     await interaction.response.send_message(
-        f"📊 **Errores registrados:**\n{lista}",
+        f"📊 **Errores:**\n{lista}",
         ephemeral=True
     )
 
-@tree.command(name="errorinfo", description="Cantidad de consultas de un error")
+@tree.command(name="errorinfo", description="Cantidad de un error")
 async def errorinfo(interaction: discord.Interaction, codigo: str):
-
     if not es_mod(interaction.user):
-        await interaction.response.send_message(
-            "❌ No tienes permisos.",
-            ephemeral=True
-        )
+        await interaction.response.send_message("❌ Sin permisos", ephemeral=True)
         return
 
     stats = cargar_stats()
     cantidad = stats.get(codigo.lower(), 0)
 
     await interaction.response.send_message(
-        f"🔎 {codigo} | Cantidad: {cantidad}",
+        f"{codigo} → {cantidad}",
         ephemeral=True
     )
 
