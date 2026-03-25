@@ -31,4 +31,4 @@ outputType = "console"
 [userenv]
 
 [userenv.shared]
-GEMINI_API_KEY = "AIzaSyCkvZK2Dr9cTUi8KEtpjnk_VWT_NXAywNU"
+CEREBRAS_API_KEY = "csk-6enkr22fnn28k2f2ryw2nkrm325x42n9th8xw8mprrejmw25"
