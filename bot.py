@@ -30,7 +30,15 @@ tree = discord.app_commands.CommandTree(client)
 def cargar_stats():
     try:
         with open("data/stats.json", "r") as f:
-            return json.load(f)
+            data = json.load(f)
+
+            # 🔒 asegurar que sea dict
+            if isinstance(data, dict):
+                return data
+            else:
+                print("⚠️ stats.json corrupto, reiniciando...")
+                return {}
+
     except:
         return {}
 
