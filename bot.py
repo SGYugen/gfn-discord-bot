@@ -4,7 +4,6 @@ import os
 
 TOKEN = os.getenv("TOKEN")
 
-# 🔴 IMPORTANTE: CAMBIA ESTO POR TU REPO REAL
 URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
 HEADERS = {"User-Agent": "gfn-bot"}
@@ -14,7 +13,6 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-# 🔍 Obtener JSON desde GitHub
 def obtener_json():
     try:
         res = requests.get(URL_JSON)
@@ -22,7 +20,6 @@ def obtener_json():
     except:
         return {}
 
-# 🔍 Buscar en Reddit
 def buscar_en_reddit(codigo):
     url = f"https://www.reddit.com/r/GeForceNOW/search.json?q={codigo}&restrict_sr=1&sort=relevance&limit=3"
     
@@ -30,7 +27,7 @@ def buscar_en_reddit(codigo):
         res = requests.get(url, headers=HEADERS)
         data = res.json()
     except:
-        return None
+        return []
 
     resultados = []
 
@@ -42,7 +39,6 @@ def buscar_en_reddit(codigo):
 
     return resultados
 
-# 🌐 Buscar en Google (fallback)
 def buscar_en_google(codigo):
     query = f"{codigo} geforce now error solucion"
     url = f"https://www.google.com/search?q={query.replace(' ', '+')}"
@@ -50,7 +46,7 @@ def buscar_en_google(codigo):
 
 @client.event
 async def on_ready():
-    print(f"✅ Bot conectado como {client.user}")
+    print(f"Bot conectado como {client.user}")
 
 @client.event
 async def on_message(message):
@@ -61,7 +57,6 @@ async def on_message(message):
 
         codigo = None
 
-        # 🔍 Detectar código
         for palabra in message.content.split():
             if palabra.lower().startswith("0x"):
                 codigo = palabra.lower().strip()
@@ -72,13 +67,12 @@ async def on_message(message):
 
         data = obtener_json()
 
-        # 🔹 1. Buscar en tu base de datos
+        # 🔹 1. BUSCAR EN JSON
         if codigo in data:
             info = data[codigo]
 
-            respuesta = f"🔎 **Error: {codigo}**\n"
-            respuesta += f"📌 {info.get('descripcion', 'Sin descripción')}\n\n"
-            respuesta += "💡 Soluciones:\n"
+            respuesta = f"🔎 Error: {codigo}\n"
+            respuesta += f"{info.get('descripcion', '')}\n\nSoluciones:\n"
 
             for s in info.get("soluciones", []):
                 respuesta += f"- {s}\n"
@@ -86,25 +80,24 @@ async def on_message(message):
             await message.channel.send(respuesta)
 
         else:
-            await message.channel.send(f"🔍 Buscando información para {codigo}...")
+            # 🔹 2. BUSCAR EN REDDIT
+            await message.channel.send(f"🔍 Buscando en Reddit {codigo}...")
 
-            # 🔹 2. Buscar en Reddit
             resultados = buscar_en_reddit(codigo)
 
             if resultados:
-                respuesta = f"💡 Posibles soluciones encontradas en Reddit:\n\n"
-
+                respuesta = "💡 Encontré esto en Reddit:\n\n"
                 for r in resultados:
                     respuesta += r + "\n\n"
 
                 await message.channel.send(respuesta)
 
             else:
-                # 🔹 3. Fallback Google
+                # 🔹 3. GOOGLE FALLBACK
                 google = buscar_en_google(codigo)
 
                 await message.channel.send(
-                    f"⚠️ No encontré resultados directos.\n\n{google}"
+                    f"⚠️ No encontré en Reddit.\n\n{google}"
                 )
 
 client.run(TOKEN)
