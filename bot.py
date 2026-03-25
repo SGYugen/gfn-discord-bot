@@ -2,7 +2,7 @@ import discord
 import requests
 
 TOKEN = "MTQ4NjQzMzM4OTk4MzU2ODA3Mw.GE7q5b.LYRaB17T1_eNpvZfExKgWPiod3BWcswzcIfStE"
-URL_JSON = "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/data/errors.json"
+URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
 intents = discord.Intents.default()
 intents.message_content = True
