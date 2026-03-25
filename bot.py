@@ -5,7 +5,7 @@ import os
 TOKEN = os.getenv("TOKEN")
 
 # 🔴 IMPORTANTE: CAMBIA ESTO POR TU REPO REAL
-URL_JSON = "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/data/errors.json"
+URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
 HEADERS = {"User-Agent": "gfn-bot"}
 
