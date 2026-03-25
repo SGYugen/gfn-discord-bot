@@ -32,46 +32,57 @@ def buscar_en_reddit(codigo):
     except:
         return None
 
+    posts = data.get("data", {}).get("children", [])
+
+    if not posts:
+        return None
+
     textos = []
 
-    for post in data.get("data", {}).get("children", []):
-        titulo = post["data"]["title"]
+    for post in posts:
+        titulo = post["data"].get("title", "")
         cuerpo = post["data"].get("selftext", "")
+
         texto = (titulo + " " + cuerpo).lower()
         textos.append(texto)
 
-    if not textos:
-        return None
-
     texto_completo = " ".join(textos)
 
-    # 📌 RESUMEN
-    if "connection" in texto_completo or "conex" in texto_completo:
+    # 🔥 RESUMEN MÁS FLEXIBLE
+    if any(p in texto_completo for p in ["connect", "conex", "network", "internet"]):
         resumen = "Problema de conexión o estabilidad con servidores."
-    elif "login" in texto_completo or "auth" in texto_completo:
-        resumen = "Problema de autenticación o inicio de sesión."
-    elif "black screen" in texto_completo or "pantalla negra" in texto_completo:
-        resumen = "Pantalla negra al iniciar juegos."
+    elif any(p in texto_completo for p in ["login", "auth", "account"]):
+        resumen = "Problema de inicio de sesión o autenticación."
+    elif any(p in texto_completo for p in ["black screen", "pantalla negra", "freeze"]):
+        resumen = "Pantalla negra o congelamiento al iniciar."
     else:
         resumen = "Error reportado por múltiples usuarios en GeForce NOW."
 
-    # 💡 SOLUCIONES
+    # 🔥 SOLUCIONES MÁS INTELIGENTES
     soluciones = []
 
-    if "restart" in texto_completo or "reiniciar" in texto_completo:
+    if any(p in texto_completo for p in ["restart", "reboot", "reiniciar"]):
         soluciones.append("Reiniciar la aplicación o dispositivo")
 
-    if "browser" in texto_completo:
-        soluciones.append("Usar la versión web del servicio")
+    if any(p in texto_completo for p in ["browser", "chrome", "web"]):
+        soluciones.append("Usar la versión web (navegador)")
 
-    if "vpn" in texto_completo or "region" in texto_completo:
-        soluciones.append("Cambiar región o desactivar VPN")
+    if any(p in texto_completo for p in ["vpn", "region", "server"]):
+        soluciones.append("Cambiar de región o desactivar VPN")
 
-    if "network" in texto_completo or "internet" in texto_completo:
+    if any(p in texto_completo for p in ["network", "internet", "wifi"]):
         soluciones.append("Revisar conexión a internet")
 
+    if any(p in texto_completo for p in ["update", "driver"]):
+        soluciones.append("Actualizar aplicación o drivers")
+
+    # 🔴 SI NO ENCUENTRA NADA, IGUAL RESPONDE
     if not soluciones:
-        soluciones.append("Probar reiniciar sesión y verificar conexión")
+        soluciones = [
+            "Reiniciar la aplicación",
+            "Cerrar sesión y volver a iniciar",
+            "Probar otra red o navegador"
+        ]
 
     return resumen, soluciones
 
