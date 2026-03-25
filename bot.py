@@ -7,14 +7,16 @@ TOKEN = os.getenv("TOKEN")
 # 🔴 CAMBIA ESTO POR TU REPO REAL
 URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
-HEADERS = {"User-Agent": "gfn-bot"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+}
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-# 🔍 Obtener JSON desde GitHub
+# 🔍 Obtener JSON
 def obtener_json():
     try:
         res = requests.get(URL_JSON)
@@ -22,33 +24,28 @@ def obtener_json():
     except:
         return {}
 
-# 🧠 Buscar y analizar Reddit
-def buscar_en_reddit(codigo):
+# 🧠 Reddit + fallback inteligente
+def analizar_error(codigo):
     url = f"https://www.reddit.com/r/GeForceNOW/search.json?q={codigo}&restrict_sr=1&sort=relevance&limit=5"
     
     try:
         res = requests.get(url, headers=HEADERS)
         data = res.json()
+        posts = data.get("data", {}).get("children", [])
     except:
-        return None
-
-    posts = data.get("data", {}).get("children", [])
-
-    if not posts:
-        return None
+        posts = []
 
     textos = []
 
     for post in posts:
         titulo = post["data"].get("title", "")
         cuerpo = post["data"].get("selftext", "")
-
         texto = (titulo + " " + cuerpo).lower()
         textos.append(texto)
 
     texto_completo = " ".join(textos)
 
-    # 🔥 RESUMEN MÁS FLEXIBLE
+    # 📌 RESUMEN
     if any(p in texto_completo for p in ["connect", "conex", "network", "internet"]):
         resumen = "Problema de conexión o estabilidad con servidores."
     elif any(p in texto_completo for p in ["login", "auth", "account"]):
@@ -56,9 +53,9 @@ def buscar_en_reddit(codigo):
     elif any(p in texto_completo for p in ["black screen", "pantalla negra", "freeze"]):
         resumen = "Pantalla negra o congelamiento al iniciar."
     else:
-        resumen = "Error reportado por múltiples usuarios en GeForce NOW."
+        resumen = "Error común en GeForce NOW reportado por la comunidad."
 
-    # 🔥 SOLUCIONES MÁS INTELIGENTES
+    # 💡 SOLUCIONES
     soluciones = []
 
     if any(p in texto_completo for p in ["restart", "reboot", "reiniciar"]):
@@ -76,25 +73,23 @@ def buscar_en_reddit(codigo):
     if any(p in texto_completo for p in ["update", "driver"]):
         soluciones.append("Actualizar aplicación o drivers")
 
-    # 🔴 SI NO ENCUENTRA NADA, IGUAL RESPONDE
+    # 🔴 RESPUESTA GENÉRICA (SI NO HAY NADA)
     if not soluciones:
         soluciones = [
             "Reiniciar la aplicación",
             "Cerrar sesión y volver a iniciar",
-            "Probar otra red o navegador"
+            "Probar desde navegador (Chrome)",
+            "Revisar conexión a internet",
+            "Cambiar de red o usar datos móviles"
         ]
 
     return resumen, soluciones
 
-# 🌐 Google fallback
-def buscar_en_google(codigo):
-    query = f"{codigo} geforce now error solucion"
-    url = f"https://www.google.com/search?q={query.replace(' ', '+')}"
-    return url
 
 @client.event
 async def on_ready():
     print(f"✅ Bot conectado como {client.user}")
+
 
 @client.event
 async def on_message(message):
@@ -105,7 +100,6 @@ async def on_message(message):
 
         codigo = None
 
-        # 🔍 Detectar código
         for palabra in message.content.split():
             if palabra.lower().startswith("0x"):
                 codigo = palabra.lower().strip()
@@ -116,7 +110,7 @@ async def on_message(message):
 
         data = obtener_json()
 
-        # 🔹 1. BUSCAR EN JSON
+        # 🔹 1. BASE PROPIA
         if codigo in data:
             info = data[codigo]
 
@@ -127,30 +121,18 @@ async def on_message(message):
             for s in info.get("soluciones", []):
                 respuesta += f"- {s}\n"
 
-            await message.channel.send(respuesta)
-
         else:
-            # 🔹 2. REDDIT (resumen inteligente)
-            resultado = buscar_en_reddit(codigo)
+            # 🔹 2. REDDIT + FALLBACK AUTOMÁTICO
+            resumen, soluciones = analizar_error(codigo)
 
-            if resultado:
-                resumen, soluciones = resultado
+            respuesta = f"🔎 **Error: {codigo}**\n\n"
+            respuesta += f"📌 **Resumen:**\n{resumen}\n\n"
+            respuesta += "💡 **Soluciones:**\n"
 
-                respuesta = f"🔎 **Error: {codigo}**\n\n"
-                respuesta += f"📌 **Resumen:**\n{resumen}\n\n"
-                respuesta += "💡 **Soluciones:**\n"
+            for s in soluciones:
+                respuesta += f"- {s}\n"
 
-                for s in soluciones:
-                    respuesta += f"- {s}\n"
+        await message.channel.send(respuesta)
 
-                await message.channel.send(respuesta)
-
-            else:
-                # 🔹 3. GOOGLE
-                google = buscar_en_google(codigo)
-
-                await message.channel.send(
-                    f"⚠️ No encontré información suficiente.\n\n🔎 Puedes buscar aquí:\n{google}"
-                )
 
 client.run(TOKEN)
