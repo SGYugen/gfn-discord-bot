@@ -1,61 +1,63 @@
 import discord
 import os
-import google.generativeai as genai
 import requests
+from google import genai
 
 TOKEN = os.getenv("TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# 🔴 URL DE TU JSON (opcional)
+# 🔴 CAMBIA ESTO POR TU REPO REAL (opcional)
 URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+# Cliente IA (Gemini)
+client_ai = genai.Client(api_key=GEMINI_API_KEY)
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-
 # 🔍 Obtener base propia
 def obtener_json():
     try:
-        res = requests.get(URL_JSON)
-        return res.json()
+        res = requests.get(URL_JSON, timeout=5)
+        if res.status_code == 200:
+            return res.json()
+        return {}
     except:
         return {}
 
-
-# 🧠 IA (Google Gemini)
+# 🧠 IA REAL (Gemini)
 def analizar_con_ia(codigo):
-    prompt = f"""
-    El error {codigo} pertenece a GeForce NOW.
-
-    Investiga y responde en español con este formato:
-
-    Resumen:
-    Explica claramente el problema
-
-    Soluciones:
-    - solución 1
-    - solución 2
-    - solución 3
-
-    Sé directo, útil y basado en problemas reales.
-    """
-
     try:
-        response = model.generate_content(prompt)
-        return response.text
-    except:
-        return "⚠️ No pude obtener información en este momento."
+        response = client_ai.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=f"""
+            El error {codigo} pertenece a GeForce NOW.
 
+            Explica en español con este formato EXACTO:
+
+            Resumen:
+            Explica claramente el problema
+
+            Soluciones:
+            - solución 1
+            - solución 2
+            - solución 3
+
+            Sé claro, útil y basado en problemas reales.
+            """
+        )
+
+        return response.text
+
+    except Exception as e:
+        print("ERROR GEMINI:", e)
+        return "⚠️ No pude obtener información en este momento."
 
 @client.event
 async def on_ready():
     print(f"✅ Bot conectado como {client.user}")
-
 
 @client.event
 async def on_message(message):
@@ -96,6 +98,5 @@ async def on_message(message):
             respuesta = f"🔎 **Error: {codigo}**\n\n{ia}"
 
         await message.channel.send(respuesta)
-
 
 client.run(TOKEN)
