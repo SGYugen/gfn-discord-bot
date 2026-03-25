@@ -27,3 +27,8 @@ args = "python bot.py"
 
 [workflows.workflow.metadata]
 outputType = "console"
+
+[userenv]
+
+[userenv.shared]
+GEMINI_API_KEY = "AIzaSyCkvZK2Dr9cTUi8KEtpjnk_VWT_NXAywNU"
