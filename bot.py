@@ -18,7 +18,8 @@ client_ai = OpenAI(
     base_url="https://api.cerebras.ai/v1"
 )
 
-intents = discord.Intents.all()
+intents = discord.Intents.default()
+intents.message_content = True
 client = discord.Client(intents=intents)
 tree = discord.app_commands.CommandTree(client)
 
