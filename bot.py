@@ -1,7 +1,9 @@
 import discord
 import requests
+import os
 
-TOKEN = "MTQ4NjQzMzM4OTk4MzU2ODA3Mw.GE7q5b.LYRaB17T1_eNpvZfExKgWPiod3BWcswzcIfStE"
+TOKEN = os.getenv("TOKEN")
+
 URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
 
 intents = discord.Intents.default()
@@ -18,12 +20,10 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    # detectar código directamente en mensaje
     if "0x" in message.content.lower():
         codigo = None
-        palabras = message.content.split()
 
-        for palabra in palabras:
+        for palabra in message.content.split():
             if palabra.lower().startswith("0x"):
                 codigo = palabra
                 break
@@ -31,7 +31,11 @@ async def on_message(message):
         if not codigo:
             return
 
-        data = requests.get(URL_JSON).json()
+        try:
+            data = requests.get(URL_JSON).json()
+        except:
+            await message.channel.send("⚠️ Error al obtener datos")
+            return
 
         if codigo in data:
             info = data[codigo]
@@ -41,9 +45,8 @@ async def on_message(message):
 
             for s in info["soluciones"]:
                 respuesta += f"- {s}\n"
-
         else:
-            respuesta = f"⚠️ Error {codigo} no encontrado en base de datos.\nSe investigará."
+            respuesta = f"⚠️ Error {codigo} no encontrado.\nSe investigará."
 
         await message.channel.send(respuesta)
 
