@@ -38,6 +38,15 @@ async def on_ready():
     print(f"Bot conectado como {client.user}")
 
 @client.event
+URL_JSON = "https://raw.githubusercontent.com/SGYugen/gfn-discord-bot/main/data/errors.json"
+
+def obtener_json():
+    try:
+        return requests.get(URL_JSON).json()
+    except:
+        return {}
+
+@client.event
 async def on_message(message):
     if message.author == client.user:
         return
@@ -53,19 +62,33 @@ async def on_message(message):
         if not codigo:
             return
 
-        await message.channel.send(f"🔍 Buscando solución para {codigo}...")
+        data = obtener_json()
 
-        resultados = buscar_en_reddit(codigo)
+        # 🔹 1. Buscar en base propia
+        if codigo in data:
+            info = data[codigo]
 
-        if resultados:
-            respuesta = f"💡 Posibles soluciones encontradas en Reddit para {codigo}:\n\n"
-            
-            for r in resultados:
-                respuesta += r + "\n\n"
+            respuesta = f"🔎 **Error: {codigo}**\n"
+            respuesta += f"📌 {info['descripcion']}\n\n💡 Soluciones:\n"
+
+            for s in info["soluciones"]:
+                respuesta += f"- {s}\n"
+
+            await message.channel.send(respuesta)
 
         else:
-            respuesta = f"⚠️ No encontré soluciones en Reddit para {codigo}"
+            # 🔹 2. Buscar en Reddit
+            await message.channel.send(f"🔍 Buscando en Reddit...")
 
-        await message.channel.send(respuesta)
+            resultados = buscar_en_reddit(codigo)
+
+            if resultados:
+                respuesta = f"💡 Encontré esto en Reddit:\n\n"
+                for r in resultados:
+                    respuesta += r + "\n\n"
+            else:
+                respuesta = f"⚠️ No encontré información para {codigo}"
+
+            await message.channel.send(respuesta)
 
 client.run(TOKEN)
