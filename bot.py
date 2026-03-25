@@ -1,6 +1,5 @@
 import discord
 import os
-import requests
 import json
 import re
 import pandas as pd
@@ -23,6 +22,8 @@ client_ai = OpenAI(
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
+
+# 🔥 FIX SLASH COMMANDS (IMPORTANTE)
 tree = discord.app_commands.CommandTree(client)
 
 # =========================
@@ -47,12 +48,14 @@ def registrar_error(codigo):
     guardar_stats(stats)
 
 # =========================
-# 📄 EXCEL NVIDIA
+# 📄 EXCEL (MODO CAÓTICO)
 # =========================
 
 def cargar_excel():
     try:
-        return pd.read_excel("data/errores.xlsx", engine="openpyxl")
+        df = pd.read_excel("data/errores.xlsx", engine="openpyxl", header=None)
+        df = df.dropna(how="all")  # eliminar filas vacías
+        return df
     except Exception as e:
         print("ERROR EXCEL:", e)
         return None
@@ -67,6 +70,7 @@ def buscar_en_excel(texto):
 
     for _, row in excel_data.iterrows():
         fila = " ".join([str(x).lower() for x in row.values])
+
         if texto in fila:
             return row
 
@@ -74,10 +78,20 @@ def buscar_en_excel(texto):
 
 def formatear_excel(row):
     respuesta = "📄 **Información oficial (NVIDIA):**\n\n"
-    for col in row.index:
-        valor = str(row[col])
-        if valor and valor != "nan":
-            respuesta += f"**{col}:** {valor}\n"
+
+    contenido = []
+
+    for valor in row.values:
+        v = str(valor).strip()
+        if v and v.lower() != "nan":
+            contenido.append(v)
+
+    # limpiar duplicados
+    contenido = list(dict.fromkeys(contenido))
+
+    for linea in contenido[:6]:  # limitar spam
+        respuesta += f"• {linea}\n"
+
     return respuesta
 
 # =========================
@@ -142,7 +156,12 @@ def es_problema(texto):
 
 @client.event
 async def on_ready():
-    await tree.sync()
+    try:
+        await tree.sync()
+        print("✅ Slash commands sincronizados")
+    except Exception as e:
+        print("ERROR SYNC:", e)
+
     print(f"✅ Bot listo como {client.user}")
 
 # =========================
@@ -154,7 +173,7 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    # 🔒 Foro o canal rápido
+    # detectar canal o foro
     es_foro = (
         isinstance(message.channel, discord.Thread) and
         message.channel.parent_id == FORO_TECNICO_ID
@@ -172,7 +191,7 @@ async def on_message(message):
 
     codigo = detectar_codigo(contenido)
 
-    # 🧵 hilo sin info
+    # hilo sin info
     if es_foro and message.id == message.channel.id:
         if not codigo and not es_problema(contenido):
             await message.channel.send(
@@ -184,11 +203,11 @@ async def on_message(message):
         return
 
     # evitar duplicados
-    async for msg in message.channel.history(limit=50):
+    async for msg in message.channel.history(limit=30):
         if msg.author == client.user and codigo and codigo in msg.content:
             return
 
-    # 📄 Excel primero
+    # 📄 BUSCAR EN EXCEL
     excel_resultado = buscar_en_excel(codigo if codigo else contenido)
 
     if excel_resultado is not None:
@@ -202,7 +221,7 @@ async def on_message(message):
         return
 
     # 🧠 IA
-    await message.channel.send("🔍 Analizando...")
+    msg_temp = await message.channel.send("🔍 Analizando...")
 
     ia = analizar_con_ia(codigo if codigo else contenido)
 
@@ -217,7 +236,7 @@ async def on_message(message):
     if codigo:
         respuesta += f"\n\n📊 Consultas: {cantidad}"
 
-    await message.channel.send(respuesta)
+    await msg_temp.edit(content=respuesta)
 
 # =========================
 # 🛠️ MOD COMMANDS
@@ -228,6 +247,7 @@ def es_mod(user):
 
 @tree.command(name="feedback", description="Lista de errores")
 async def feedback(interaction: discord.Interaction):
+
     if not es_mod(interaction.user):
         await interaction.response.send_message("❌ Sin permisos", ephemeral=True)
         return
@@ -238,15 +258,16 @@ async def feedback(interaction: discord.Interaction):
         await interaction.response.send_message("No hay datos", ephemeral=True)
         return
 
-    lista = "\n".join(stats.keys())
+    lista = "\n".join([f"{k}" for k in stats.keys()])
 
     await interaction.response.send_message(
-        f"📊 **Errores:**\n{lista}",
+        f"📊 **Errores registrados:**\n{lista}",
         ephemeral=True
     )
 
 @tree.command(name="errorinfo", description="Cantidad de un error")
 async def errorinfo(interaction: discord.Interaction, codigo: str):
+
     if not es_mod(interaction.user):
         await interaction.response.send_message("❌ Sin permisos", ephemeral=True)
         return
@@ -255,8 +276,15 @@ async def errorinfo(interaction: discord.Interaction, codigo: str):
     cantidad = stats.get(codigo.lower(), 0)
 
     await interaction.response.send_message(
-        f"{codigo} → {cantidad}",
+        f"🔎 {codigo} → {cantidad}",
         ephemeral=True
     )
+
+# =========================
+# 🚀 START
+# =========================
+
+import time
+time.sleep(2)
 
 client.run(TOKEN)
