@@ -11,11 +11,18 @@ FORO_TECNICO_ID = 1486483140271931495
 CANAL_RAPIDO_ID = 1486499974119166012  # CAMBIAR
 ROL_MOD_ID = 1486483938665959596
 
-# IA
+# =========================
+# 🧠 IA (CEREBRAS)
+# =========================
+
 client_ai = OpenAI(
     api_key=CEREBRAS_API_KEY,
     base_url="https://api.cerebras.ai/v1"
 )
+
+# =========================
+# ⚙️ DISCORD
+# =========================
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -45,7 +52,7 @@ def registrar_error(codigo):
     guardar_stats(stats)
 
 # =========================
-# 📄 JSON DATA
+# 📄 JSON ERRORES
 # =========================
 
 def cargar_errores():
@@ -83,7 +90,7 @@ def formatear_json(item):
     return texto
 
 # =========================
-# 🧠 IA
+# 🧠 IA RESPUESTA
 # =========================
 
 def analizar_con_ia(texto, contexto=None):
@@ -94,27 +101,28 @@ def analizar_con_ia(texto, contexto=None):
             prompt += f"\nInformación oficial:\n{contexto}\n"
 
         prompt += """
-        Responde en español:
+Responde en español:
 
-        Resumen:
-        ...
+Resumen:
+...
 
-        Soluciones:
-        - ...
-        - ...
-        - ...
-        """
+Soluciones:
+- ...
+- ...
+- ...
+"""
 
         response = client_ai.chat.completions.create(
             model="llama3.1-8b",
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=600
+            max_tokens=350
         )
 
         return response.choices[0].message.content
 
-    except:
-        return "⚠️ No pude obtener información."
+    except Exception as e:
+        print("ERROR IA:", e)
+        return "⚠️ No pude obtener información en este momento."
 
 # =========================
 # 🔍 DETECCIÓN
@@ -125,7 +133,11 @@ def detectar_codigo(texto):
     return match.group() if match else None
 
 def es_problema(texto):
-    palabras = ["error", "problema", "no funciona", "lag", "crash", "borroso"]
+    palabras = [
+        "error", "problema", "no funciona", "no inicia",
+        "pantalla negra", "lag", "borroso", "crash",
+        "se cierra", "no carga"
+    ]
     return any(p in texto.lower() for p in palabras)
 
 # =========================
@@ -167,15 +179,9 @@ async def on_message(message):
     if not codigo and not es_problema(contenido):
         return
 
-    if len(respuesta) > 1900:
-    partes = [respuesta[i:i+1900] for i in range(0, len(respuesta), 1900)]
-    for parte in partes:
-        await message.channel.send(parte)
-else:
-    await message.channel.send(respuesta)
+    await message.channel.send("🔍 Analizando...")
 
     resultado = buscar_error(contenido)
-
     contexto = formatear_json(resultado) if resultado else None
 
     respuesta_ia = analizar_con_ia(contenido, contexto)
@@ -192,16 +198,25 @@ else:
 
     respuesta += f"\n🔗 {link}"
 
-    await message.channel.send(respuesta)
+    # =========================
+    # 🚨 FIX MENSAJES LARGOS
+    # =========================
+
+    if len(respuesta) > 1900:
+        partes = [respuesta[i:i+1900] for i in range(0, len(respuesta), 1900)]
+        for parte in partes:
+            await message.channel.send(parte)
+    else:
+        await message.channel.send(respuesta)
 
 # =========================
-# 🛠️ COMANDOS
+# 🛠️ COMANDOS MOD
 # =========================
 
 def es_mod(user):
     return any(role.id == ROL_MOD_ID for role in user.roles)
 
-@tree.command(name="errorinfo", description="Ver errores")
+@tree.command(name="errorinfo", description="Ver errores registrados")
 async def errorinfo(interaction: discord.Interaction):
 
     if not es_mod(interaction.user):
@@ -210,11 +225,22 @@ async def errorinfo(interaction: discord.Interaction):
 
     stats = cargar_stats()
 
+    if not stats:
+        await interaction.response.send_message("No hay datos", ephemeral=True)
+        return
+
     texto = "\n".join([f"{k} → {v}" for k, v in stats.items()])
 
+    if len(texto) > 1900:
+        texto = texto[:1900]
+
     await interaction.response.send_message(
-        f"📊 **Errores:**\n{texto}",
+        f"📊 **Errores registrados:**\n{texto}",
         ephemeral=True
     )
+
+# =========================
+# 🚀 RUN
+# =========================
 
 client.run(TOKEN)
