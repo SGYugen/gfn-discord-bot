@@ -2,14 +2,13 @@ import discord
 import os
 import json
 import re
-import pandas as pd
 from openai import OpenAI
 
 TOKEN = os.getenv("TOKEN")
 CEREBRAS_API_KEY = os.getenv("CEREBRAS_API_KEY")
 
 FORO_TECNICO_ID = 1486483140271931495
-CANAL_RAPIDO_ID = 1486499974119166012
+CANAL_RAPIDO_ID = 1486499974119166012  # CAMBIAR
 ROL_MOD_ID = 1486483938665959596
 
 # IA
@@ -20,6 +19,7 @@ client_ai = OpenAI(
 
 intents = discord.Intents.default()
 intents.message_content = True
+
 client = discord.Client(intents=intents)
 tree = discord.app_commands.CommandTree(client)
 
@@ -45,49 +45,40 @@ def registrar_error(codigo):
     guardar_stats(stats)
 
 # =========================
-# 📄 EXCEL INTELIGENTE
+# 📄 JSON DATA
 # =========================
 
-def cargar_excel():
+def cargar_errores():
     try:
-        df = pd.read_excel("data/errores.xlsx", engine="openpyxl", header=None)
-        df = df.dropna(how="all")
-        return df
+        with open("data/errores.json", "r", encoding="utf-8") as f:
+            return json.load(f)
     except:
-        return None
+        return []
 
-excel_data = cargar_excel()
+errores_data = cargar_errores()
 
-def buscar_en_excel(texto):
-    if excel_data is None:
-        return None
-
+def buscar_error(texto):
     texto = texto.lower()
-    mejor_match = None
+
+    mejor = None
     score_max = 0
 
-    for _, row in excel_data.iterrows():
-        fila = " ".join([str(x).lower() for x in row.values])
+    for item in errores_data:
+        contenido = " ".join(item.values()).lower()
 
-        score = sum(1 for palabra in texto.split() if palabra in fila)
+        score = sum(1 for palabra in texto.split() if palabra in contenido)
 
         if score > score_max:
             score_max = score
-            mejor_match = row
+            mejor = item
 
-    return mejor_match if score_max > 1 else None
+    return mejor if score_max > 1 else None
 
-def formatear_excel(row):
-    contenido = []
+def formatear_json(item):
+    texto = "📄 **Información oficial (NVIDIA):**\n\n"
 
-    for valor in row.values:
-        v = str(valor).strip()
-        if v and v.lower() != "nan":
-            contenido.append(v)
-
-    contenido = list(dict.fromkeys(contenido))
-
-    texto = "\n".join(contenido[:6])
+    for k, v in item.items():
+        texto += f"**{k}:** {v}\n"
 
     return texto
 
@@ -95,14 +86,12 @@ def formatear_excel(row):
 # 🧠 IA
 # =========================
 
-def analizar_con_ia(texto, contexto_excel=None):
+def analizar_con_ia(texto, contexto=None):
     try:
-        prompt = f"""
-        Problema en GeForce NOW: {texto}
-        """
+        prompt = f"Problema en GeForce NOW: {texto}\n"
 
-        if contexto_excel:
-            prompt += f"\nInformación adicional:\n{contexto_excel}\n"
+        if contexto:
+            prompt += f"\nInformación oficial:\n{contexto}\n"
 
         prompt += """
         Responde en español:
@@ -114,8 +103,6 @@ def analizar_con_ia(texto, contexto_excel=None):
         - ...
         - ...
         - ...
-
-        Si existe una solución clara, inclúyela.
         """
 
         response = client_ai.chat.completions.create(
@@ -134,20 +121,11 @@ def analizar_con_ia(texto, contexto_excel=None):
 # =========================
 
 def detectar_codigo(texto):
-    texto = texto.lower()
-
-    match = re.search(r'0x[0-9a-f]+', texto)
-    if match:
-        return match.group()
-
-    return None
+    match = re.search(r'0x[0-9a-f]+', texto.lower())
+    return match.group() if match else None
 
 def es_problema(texto):
-    palabras = [
-        "error", "problema", "no funciona", "no inicia",
-        "pantalla negra", "lag", "borroso", "crash",
-        "se cierra", "no carga"
-    ]
+    palabras = ["error", "problema", "no funciona", "lag", "crash", "borroso"]
     return any(p in texto.lower() for p in palabras)
 
 # =========================
@@ -181,45 +159,33 @@ async def on_message(message):
 
     contenido = message.content.strip()
 
-    if len(contenido) < 5:
+    if len(contenido) < 4:
         return
 
     codigo = detectar_codigo(contenido)
 
-    if es_foro and message.id == message.channel.id:
-        if not codigo and not es_problema(contenido):
-            await message.channel.send(
-                f"{message.author.mention} ⚠️ Describe mejor el problema."
-            )
-        return
-
     if not codigo and not es_problema(contenido):
         return
 
-    # evitar spam
-    async for msg in message.channel.history(limit=20):
-        if msg.author == client.user:
-            return
-
     await message.channel.send("🔍 Analizando...")
 
-    excel_resultado = buscar_en_excel(contenido)
+    resultado = buscar_error(contenido)
 
-    contexto_excel = formatear_excel(excel_resultado) if excel_resultado is not None else None
+    contexto = formatear_json(resultado) if resultado else None
 
-    respuesta_ia = analizar_con_ia(contenido, contexto_excel)
+    respuesta_ia = analizar_con_ia(contenido, contexto)
 
     if codigo:
         registrar_error(codigo)
 
-    link_google = f"https://www.google.com/search?q=geforce+now+{contenido.replace(' ', '+')}"
+    link = f"https://www.google.com/search?q=geforce+now+{contenido.replace(' ', '+')}"
 
     respuesta = f"🔎 **Consulta:** {codigo if codigo else 'General'}\n\n{respuesta_ia}"
 
-    if contexto_excel:
-        respuesta += f"\n\n📄 **Fuente NVIDIA:**\n{contexto_excel}"
+    if contexto:
+        respuesta += f"\n\n{contexto}"
 
-    respuesta += f"\n\n🔗 Más info: {link_google}"
+    respuesta += f"\n🔗 {link}"
 
     await message.channel.send(respuesta)
 
@@ -230,30 +196,7 @@ async def on_message(message):
 def es_mod(user):
     return any(role.id == ROL_MOD_ID for role in user.roles)
 
-class ErrorSelect(discord.ui.Select):
-    def __init__(self, stats):
-        options = [
-            discord.SelectOption(label=k, description=f"Consultas: {v}")
-            for k, v in list(stats.items())[:25]
-        ]
-        super().__init__(placeholder="Selecciona un error", options=options)
-        self.stats = stats
-
-    async def callback(self, interaction: discord.Interaction):
-        codigo = self.values[0]
-        cantidad = self.stats.get(codigo, 0)
-
-        await interaction.response.send_message(
-            f"🔎 {codigo} → {cantidad}",
-            ephemeral=True
-        )
-
-class ErrorView(discord.ui.View):
-    def __init__(self, stats):
-        super().__init__()
-        self.add_item(ErrorSelect(stats))
-
-@tree.command(name="errorinfo", description="Ver errores con selector")
+@tree.command(name="errorinfo", description="Ver errores")
 async def errorinfo(interaction: discord.Interaction):
 
     if not es_mod(interaction.user):
@@ -262,15 +205,10 @@ async def errorinfo(interaction: discord.Interaction):
 
     stats = cargar_stats()
 
-    if not stats:
-        await interaction.response.send_message("No hay datos", ephemeral=True)
-        return
-
-    view = ErrorView(stats)
+    texto = "\n".join([f"{k} → {v}" for k, v in stats.items()])
 
     await interaction.response.send_message(
-        "📊 Selecciona un error:",
-        view=view,
+        f"📊 **Errores:**\n{texto}",
         ephemeral=True
     )
 
