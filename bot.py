@@ -167,7 +167,12 @@ async def on_message(message):
     if not codigo and not es_problema(contenido):
         return
 
-    await message.channel.send("🔍 Analizando...")
+    if len(respuesta) > 1900:
+    partes = [respuesta[i:i+1900] for i in range(0, len(respuesta), 1900)]
+    for parte in partes:
+        await message.channel.send(parte)
+else:
+    await message.channel.send(respuesta)
 
     resultado = buscar_error(contenido)
 
