@@ -1,0 +1,2290 @@
+[
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+        "Unnamed: 6": "Type"
+    },
+    {
+        "Unnamed: 6": "UPD",
+        "Unnamed: 7": ": Actualizaciones"
+    },
+    {
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "error",
+        "Unnamed: 9": "MALO"
+    },
+    {
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "soporte tecnico",
+        "Unnamed: 9": "LISTO"
+    },
+    {
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Guías de Usuario",
+        "Unnamed: 9": "Pendiente"
+    },
+    {
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Procedimientos",
+        "Unnamed: 9": "Pendiente imagen"
+    },
+    {
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Preguntas Frecuentes"
+    },
+    {
+        "Unnamed: 6": "TUT",
+        "Unnamed: 7": "Tutoriales"
+    },
+    {
+        "Unnamed: 6": "DOC",
+        "Unnamed: 7": "Documentación"
+    },
+    {
+        "Unnamed: 6": "UPD",
+        "Unnamed: 7": "Actualizaciones"
+    },
+    {
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Resolución de Problemas (Troubleshooting)"
+    },
+    {
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": ": Seguridad"
+    },
+    {
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "configuración"
+    },
+    {
+        "Unnamed: 3": "URL",
+        "Unnamed: 4": "Nomenclatura",
+        "Unnamed: 5": "Nombre",
+        "Unnamed: 6": "Tipo",
+        "Unnamed: 7": "Servicio",
+        "Unnamed: 8": "Estado",
+        "Unnamed: 9": "Estado 2"
+    },
+    {
+        "Unnamed: 3": "How can I set up my Windows PC with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 5": "How can I set up my Windows PC with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I set up Cloud G-SYNC with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 5": "How can I set up Cloud G-SYNC with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I set up my macOS with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 5": "How can I set up my macOS with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I manually enable browser notifications on play.geforcenow.com for my Chromebook, PC, or Mac?",
+        "Unnamed: 5": "How do I manually enable browser notifications on play.geforcenow.com for my Chromebook, PC, or Mac?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I enable HDR when streaming with my GeForce NOW Ultimate membership?",
+        "Unnamed: 5": "How do I enable HDR when streaming with my GeForce NOW Ultimate membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 10": "LINK"
+    },
+    {
+        "Unnamed: 3": "How can I set up 4K streaming with GeForce NOW on my Smart TV?",
+        "Unnamed: 5": "How can I set up 4K streaming with GeForce NOW on my Smart TV?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I set up my SHIELD TV with my GeForce NOW Ultmate Membership?",
+        "Unnamed: 5": "How can I set up my SHIELD TV with my GeForce NOW Ultmate Membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I set up my Chromebook with a GeForce NOW Ultimate Membership?",
+        "Unnamed: 5": "How can I set up my Chromebook with a GeForce NOW Ultimate Membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I change the GeForce NOW service region I connect and play from?",
+        "Unnamed: 5": "How do I change the GeForce NOW service region I connect and play from?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I sync my Steam account to my GeForce NOW account to find the games I own?",
+        "Unnamed: 5": "How do I sync my Steam account to my GeForce NOW account to find the games I own?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "How do I enable Reflex streaming mode (240/120/60 FPS) on my GeForce NOW Ultimate membership",
+        "Unnamed: 5": "How do I enable Reflex streaming mode (240/120/60 FPS) on my GeForce NOW Ultimate membership",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I enable 4K and Ultra wide resolutions when streaming with my GeForce NOW Ultimate membership?",
+        "Unnamed: 5": "How do I enable 4K and Ultra wide resolutions when streaming with my GeForce NOW Ultimate membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I sync my Xbox games with my GeForce NOW My Library?",
+        "Unnamed: 5": "How do I sync my Xbox games with my GeForce NOW My Library?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "How do I set up multi-channel Surround audio (5.1 or 7.1) on GeForce NOW?",
+        "Unnamed: 5": "How do I set up multi-channel Surround audio (5.1 or 7.1) on GeForce NOW?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I set up Android Desktop mode (DeX) with keyboard and mouse support on GeForce NOW?",
+        "Unnamed: 5": "How do I set up Android Desktop mode (DeX) with keyboard and mouse support on GeForce NOW?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am playing a game that supports HDR on GeForce NOW, but the NVIDIA Games app does not say it supports HDR. How can I enable HDR?",
+        "Unnamed: 5": "I am playing a game that supports HDR on GeForce NOW, but the NVIDIA Games app does not say it supports HDR. How can I enable HDR?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I sync my Epic Games to my GeForce NOW account to find games that I own?",
+        "Unnamed: 5": "How do I sync my Epic Games to my GeForce NOW account to find games that I own?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "ASUS RAPTURE GT-AC2900 router setup for GeForce NOW",
+        "Unnamed: 5": "ASUS RAPTURE GT-AC2900 router setup for GeForce NOW",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 10": "NO  PORQUE NO"
+    },
+    {
+        "Unnamed: 3": "Ubiquiti AmpliFi Gamer’s Edition router setup for GeForce NOW",
+        "Unnamed: 5": "Ubiquiti AmpliFi Gamer’s Edition router setup for GeForce NOW",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 10": "NO  PORQUE NO"
+    },
+    {
+        "Unnamed: 3": "ASUS RT-AX86U router setup for GeForce NOW",
+        "Unnamed: 5": "ASUS RT-AX86U router setup for GeForce NOW",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 10": "NO  PORQUE NO"
+    },
+    {
+        "Unnamed: 3": "Acer Predator Connect W6 Router Setup for GeForce NOW",
+        "Unnamed: 5": "Acer Predator Connect W6 Router Setup for GeForce NOW",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why do I need to close my browser windows when updating GeForce NOW?",
+        "Unnamed: 5": "Why do I need to close my browser windows when updating GeForce NOW?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I change the location of my Highlights Gallery to store videos to a cloud drive?",
+        "Unnamed: 5": "Can I change the location of my Highlights Gallery to store videos to a cloud drive?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "cloud backed (Base de dato)"
+    },
+    {
+        "Unnamed: 3": "How can I set up my Android device with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 5": "How can I set up my Android device with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 6": "CFG",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GFN Android login failed",
+        "Unnamed: 5": "GFN Android login failed",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "I am getting the Error Code 0xC0F1103F. What does this mean?",
+        "Unnamed: 5": "I am getting the Error Code 0xC0F1103F. What does this mean?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Error Message 0x8008201c",
+        "Unnamed: 5": "Error Message 0x8008201c",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why am I receiving an error message that GeForce NOW is not currently supported in my region?",
+        "Unnamed: 5": "Why am I receiving an error message that GeForce NOW is not currently supported in my region?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "After registering for a new NVIDIA Account, I never received my verification email.",
+        "Unnamed: 5": "After registering for a new NVIDIA Account, I never received my verification email.",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I FOUND A BUG, WHERE DO I GO TO REPORT IT?",
+        "Unnamed: 5": "I FOUND A BUG, WHERE DO I GO TO REPORT IT?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I launch Alan Wake 2 I get a message saying “Your GPU driver is outdated. Please update it to a newer version.”",
+        "Unnamed: 5": "When I launch Alan Wake 2 I get a message saying “Your GPU driver is outdated. Please update it to a newer version.”",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using QuickTime Player on macOS to watch NVIDIA Highlights captured at higher than 60fps. Why does video appear in slow motion?",
+        "Unnamed: 5": "I am using QuickTime Player on macOS to watch NVIDIA Highlights captured at higher than 60fps. Why does video appear in slow motion?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why are the Highlights I captured on GeForce NOW changing resolution during video playback?",
+        "Unnamed: 5": "Why are the Highlights I captured on GeForce NOW changing resolution during video playback?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I have a GeForce Now for macOS feature request. Who can I tell?",
+        "Unnamed: 5": "I have a GeForce Now for macOS feature request. Who can I tell?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 8": "pendiente",
+        "Unnamed: 9": "Foro"
+    },
+    {
+        "Unnamed: 3": "Why did my Epic account link to GeForce NOW disappear?",
+        "Unnamed: 5": "Why did my Epic account link to GeForce NOW disappear?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW Client not updating with Windows 7",
+        "Unnamed: 5": "GeForce NOW Client not updating with Windows 7",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why will the Highlights I captured on my Windows system using GeForce NOW not play well or at all on my macOS system, or vice versa?",
+        "Unnamed: 5": "Why will the Highlights I captured on my Windows system using GeForce NOW not play well or at all on my macOS system, or vice versa?",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 8": "pendiente",
+        "Unnamed: 9": "Foro"
+    },
+    {
+        "Unnamed: 3": "After installing the GeForce NOW v2.0.34.132 app on Windows, I am seeing a blank app layout.",
+        "Unnamed: 5": "After installing the GeForce NOW v2.0.34.132 app on Windows, I am seeing a blank app layout.",
+        "Unnamed: 6": "ERR",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I access a command prompt or browse the underlying file system in GeForce NOW?",
+        "Unnamed: 5": "Can I access a command prompt or browse the underlying file system in GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHAT ARE THE SEPA AND GOOGLE PAY LIMITATIONS FOR GEFORCE NOW MEMBERSHIPS?",
+        "Unnamed: 5": "WHAT ARE THE SEPA AND GOOGLE PAY LIMITATIONS FOR GEFORCE NOW MEMBERSHIPS?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How can I see my GeForce NOW billing history?",
+        "Unnamed: 5": "How can I see my GeForce NOW billing history?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "Can I change my GeForce NOW monthly billing date?",
+        "Unnamed: 5": "Can I change my GeForce NOW monthly billing date?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "Why was I charged earlier than expected for my GeForce NOW membership?",
+        "Unnamed: 5": "Why was I charged earlier than expected for my GeForce NOW membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "Why am I charged twice a month for my GeForce NOW membership?",
+        "Unnamed: 5": "Why am I charged twice a month for my GeForce NOW membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "How do I manage my connected accounts on GeForce NOW?",
+        "Unnamed: 5": "How do I manage my connected accounts on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What are the supported locations for GeForce NOW?",
+        "Unnamed: 5": "What are the supported locations for GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 10": "Faltaria agregar posteriormente a Peru Colombia"
+    },
+    {
+        "Unnamed: 3": "Is League of Legends available on GeForce NOW?",
+        "Unnamed: 5": "Is League of Legends available on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW CAN I REDUCE LAG OR IMPROVE STREAMING QUALITY WHEN USING GEFORCE NOW?",
+        "Unnamed: 5": "HOW CAN I REDUCE LAG OR IMPROVE STREAMING QUALITY WHEN USING GEFORCE NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHAT ARE THE SEPA AND GOOGLE PAY LIMITATIONS FOR GEFORCE NOW MEMBERSHIPS?",
+        "Unnamed: 5": "WHAT ARE THE SEPA AND GOOGLE PAY LIMITATIONS FOR GEFORCE NOW MEMBERSHIPS?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Can I continue to play supported GeForce NOW games that have been delisted from a digital store, like Rocket League on Steam?",
+        "Unnamed: 5": "Can I continue to play supported GeForce NOW games that have been delisted from a digital store, like Rocket League on Steam?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What GeForce NOW games are supported when streaming from a browser on iOS, iPadOS and Android devices?",
+        "Unnamed: 5": "What GeForce NOW games are supported when streaming from a browser on iOS, iPadOS and Android devices?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Genshin Impact on GeForce NOW",
+        "Unnamed: 5": "Genshin Impact on GeForce NOW",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Microsoft Xbox Game Studios, Bethesda, and Activision Blizzard games on GeForce NOW.",
+        "Unnamed: 5": "Microsoft Xbox Game Studios, Bethesda, and Activision Blizzard games on GeForce NOW.",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I cancel my GeForce NOW membership?",
+        "Unnamed: 5": "How do I cancel my GeForce NOW membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How is copy and paste supported on GeForce NOW?",
+        "Unnamed: 5": "How is copy and paste supported on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "CAN I USE A GAMEPAD WITH GEFORCE NOW ON PC OR MAC?",
+        "Unnamed: 5": "CAN I USE A GAMEPAD WITH GEFORCE NOW ON PC OR MAC?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WILL GEFORCE NOW WORK WITH MY MAC?",
+        "Unnamed: 5": "WILL GEFORCE NOW WORK WITH MY MAC?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Ubisoft Account linking work with Ubisoft games purchased from the Epic Games or Steam Store?",
+        "Unnamed: 5": "Does Ubisoft Account linking work with Ubisoft games purchased from the Epic Games or Steam Store?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "DOES GEFORCE NOW SUPPORT WINDOWED MODE ON PC OR MAC?",
+        "Unnamed: 5": "DOES GEFORCE NOW SUPPORT WINDOWED MODE ON PC OR MAC?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "DOES GEFORCE NOW SUPPORT WINDOWED MODE ON PC OR MAC?",
+        "Unnamed: 5": "DOES GEFORCE NOW SUPPORT WINDOWED MODE ON PC OR MAC?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What gamepads does GeForce NOW support on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "What gamepads does GeForce NOW support on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHEN IS GEFORCE NOW FOR MAC AND PC LAUNCHING?",
+        "Unnamed: 5": "WHEN IS GEFORCE NOW FOR MAC AND PC LAUNCHING?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 10": "Falta la URL  de GFN BY DIGEVO"
+    },
+    {
+        "Unnamed: 3": "Does GeForce NOW allow me to play games with a keyboard and mouse on LG or Samsung TVs?",
+        "Unnamed: 5": "Does GeForce NOW allow me to play games with a keyboard and mouse on LG or Samsung TVs?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use Sony PlayStation controllers with GeForce NOW?",
+        "Unnamed: 5": "Can I use Sony PlayStation controllers with GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I improve my streaming quality on GeForce NOW on Chromebook?",
+        "Unnamed: 5": "How do I improve my streaming quality on GeForce NOW on Chromebook?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Where are the Highlights videos and screenshots stored?",
+        "Unnamed: 5": "Where are the Highlights videos and screenshots stored?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "cloud backed (Base de dato)"
+    },
+    {
+        "Unnamed: 3": "Which gamepads are supported by GeForce NOW on TVs?",
+        "Unnamed: 5": "Which gamepads are supported by GeForce NOW on TVs?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "DO YOU HAVE A LIST OF SUPPORTED NETWORK ADAPTERS FOR GEFORCE NOW?",
+        "Unnamed: 5": "DO YOU HAVE A LIST OF SUPPORTED NETWORK ADAPTERS FOR GEFORCE NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW Android App FAQ",
+        "Unnamed: 5": "GeForce NOW Android App FAQ",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does GeForce NOW support saved games?",
+        "Unnamed: 5": "Does GeForce NOW support saved games?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What payment methods can I use to sign up for a GeForce NOW membership?",
+        "Unnamed: 5": "What payment methods can I use to sign up for a GeForce NOW membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Honkai: Star Rail on GeForce NOW Frequently Asked Questions",
+        "Unnamed: 5": "Honkai: Star Rail on GeForce NOW Frequently Asked Questions",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "DO I NEED TO MANAGE MY NVIDIA DRIVERS OR GAME UPDATES MYSELF?",
+        "Unnamed: 5": "DO I NEED TO MANAGE MY NVIDIA DRIVERS OR GAME UPDATES MYSELF?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I run games in fullscreen mode when using GeForce NOW on iOS (iPhone) and iPadOS (iPad)?",
+        "Unnamed: 5": "Can I run games in fullscreen mode when using GeForce NOW on iOS (iPhone) and iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I upload my own saved games onto GeForce NOW?",
+        "Unnamed: 5": "Can I upload my own saved games onto GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use EA Play or EA Play Pro to play Electronic Arts games on GeForce NOW?",
+        "Unnamed: 5": "Can I use EA Play or EA Play Pro to play Electronic Arts games on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I don’t have a bluetooth mouse/keyboard, can I still play my games on my Android mobile device?",
+        "Unnamed: 5": "I don’t have a bluetooth mouse/keyboard, can I still play my games on my Android mobile device?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use touch to play games when using GeForce NOW on iOS (iPhone) and iPadOS (iPad)?",
+        "Unnamed: 5": "Can I use touch to play games when using GeForce NOW on iOS (iPhone) and iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I don’t have a gamepad, can I still play my games on my Android mobile device?",
+        "Unnamed: 5": "I don’t have a gamepad, can I still play my games on my Android mobile device?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why does the GeForce NOW Android mobile app have different games than the PC or macOS apps?",
+        "Unnamed: 5": "Why does the GeForce NOW Android mobile app have different games than the PC or macOS apps?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Are NVIDIA Highlights, FreeStyle, and Ansel available on Chromebooks?",
+        "Unnamed: 5": "Are NVIDIA Highlights, FreeStyle, and Ansel available on Chromebooks?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHEN I LOG IN TO STEAM OR TRY TO LAUNCH A GAME I AM PROMPTED WITH A STEAM GUARD SECURITY CHECK OR A BLIZZARD SECURITY CHECK. IS THIS NORMAL?",
+        "Unnamed: 5": "WHEN I LOG IN TO STEAM OR TRY TO LAUNCH A GAME I AM PROMPTED WITH A STEAM GUARD SECURITY CHECK OR A BLIZZARD SECURITY CHECK. IS THIS NORMAL?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "CAN YOU BRING UP THE STEAM OVERLAY WHEN PLAYING GAMES ON GEFORCE NOW?",
+        "Unnamed: 5": "CAN YOU BRING UP THE STEAM OVERLAY WHEN PLAYING GAMES ON GEFORCE NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Ubisoft Account linking work with Ubisoft+ memberships on GeForce NOW?",
+        "Unnamed: 5": "Does Ubisoft Account linking work with Ubisoft+ memberships on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW on SHIELD - Microphone Support FAQ",
+        "Unnamed: 5": "GeForce NOW on SHIELD - Microphone Support FAQ",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Ubisoft Account linking work with Ubisoft+ memberships on GeForce NOW?",
+        "Unnamed: 5": "Does Ubisoft Account linking work with Ubisoft+ memberships on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW on SHIELD - Microphone Support FAQ",
+        "Unnamed: 5": "GeForce NOW on SHIELD - Microphone Support FAQ",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Is there a limit to how many videos of screenshots I can create with Highlights on GeForce NOW?",
+        "Unnamed: 5": "Is there a limit to how many videos of screenshots I can create with Highlights on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Highlights work on GeForce NOW for SHIELD TV?",
+        "Unnamed: 5": "Does Highlights work on GeForce NOW for SHIELD TV?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I checked my credit card statement and I am not seeing a charge from NVIDIA on my statement for my GeForce NOW membership. Under what name will the charges appear on my statement?",
+        "Unnamed: 5": "I checked my credit card statement and I am not seeing a charge from NVIDIA on my statement for my GeForce NOW membership. Under what name will the charges appear on my statement?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How does NVIDIA set max frame rates for games on GeForce NOW for Priority members?",
+        "Unnamed: 5": "How does NVIDIA set max frame rates for games on GeForce NOW for Priority members?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can you use an external keyboard, mouse or trackpad with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "Can you use an external keyboard, mouse or trackpad with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why is Fortnite different on my phone compared to other devices supported by GeForce NOW, like my PC, Mac, or Chromebook?",
+        "Unnamed: 5": "Why is Fortnite different on my phone compared to other devices supported by GeForce NOW, like my PC, Mac, or Chromebook?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the Controller for Xbox Series X work with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "Does the Controller for Xbox Series X work with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "If I cancel my GeForce NOW membership, can I take my saved games with me?",
+        "Unnamed: 5": "If I cancel my GeForce NOW membership, can I take my saved games with me?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Will I ever be charged for the GeForce NOW Free membership?",
+        "Unnamed: 5": "Will I ever be charged for the GeForce NOW Free membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Will I ever be charged for the GeForce NOW Free membership?",
+        "Unnamed: 5": "Will I ever be charged for the GeForce NOW Free membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the GeForce NOW Android app work with external mice and keyboards?",
+        "Unnamed: 5": "Does the GeForce NOW Android app work with external mice and keyboards?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the Controller for Xbox Series X work with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "Does the Controller for Xbox Series X work with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "If games are added to Xbox PC Game Pass or I purchase a Microsoft store game, will GeForce NOW automatically add those to the My Library?",
+        "Unnamed: 5": "If games are added to Xbox PC Game Pass or I purchase a Microsoft store game, will GeForce NOW automatically add those to the My Library?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "DO I NEED TO OWN GAMES TO PLAY THEM ON GEFORCE NOW BETA?",
+        "Unnamed: 5": "DO I NEED TO OWN GAMES TO PLAY THEM ON GEFORCE NOW BETA?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Which browsers can I use on Steam Deck to access GeForce NOW?",
+        "Unnamed: 5": "Which browsers can I use on Steam Deck to access GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use a gaming headset for voice chat when using GeForce NOW on LG TVs or Samsung TVs?",
+        "Unnamed: 5": "Can I use a gaming headset for voice chat when using GeForce NOW on LG TVs or Samsung TVs?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW MANY GAMES CAN I INSTALL?",
+        "Unnamed: 5": "HOW MANY GAMES CAN I INSTALL?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What type of capture features does Highlights support?",
+        "Unnamed: 5": "What type of capture features does Highlights support?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I download the GeForce NOW app on my older TVs?",
+        "Unnamed: 5": "Can I download the GeForce NOW app on my older TVs?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How long can I play games on GeForce NOW?",
+        "Unnamed: 5": "How long can I play games on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I browse external websites when playing a game on GeForce NOW?",
+        "Unnamed: 5": "Can I browse external websites when playing a game on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why are more games showing up “Patching” on GeForce NOW?",
+        "Unnamed: 5": "Why are more games showing up “Patching” on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "In what cases will GeForce NOW automatically disconnect you?",
+        "Unnamed: 5": "In what cases will GeForce NOW automatically disconnect you?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What is Fortnite Pre-Loading on GeForce NOW?",
+        "Unnamed: 5": "What is Fortnite Pre-Loading on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Do I need a credit card or PayPal to sign-up for the GeForce NOW Free membership?",
+        "Unnamed: 5": "Do I need a credit card or PayPal to sign-up for the GeForce NOW Free membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "If my Xbox PC Game Pass membership expires, will GeForce NOW automatically remove these games from My Library?",
+        "Unnamed: 5": "If my Xbox PC Game Pass membership expires, will GeForce NOW automatically remove these games from My Library?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What's the difference between the GeForce NOW Founder's Plan and Free Plan memberships?",
+        "Unnamed: 5": "What's the difference between the GeForce NOW Founder's Plan and Free Plan memberships?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "I checked my credit card or PayPal statement and I see that my GeForce NOW membership price is more than is listed on your website. Why am I charged more than expected?",
+        "Unnamed: 5": "I checked my credit card or PayPal statement and I see that my GeForce NOW membership price is more than is listed on your website. Why am I charged more than expected?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Why does the GeForce NOW Android app have different games than the PC or Mac apps?",
+        "Unnamed: 5": "Why does the GeForce NOW Android app have different games than the PC or Mac apps?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I purchase a GeForce NOW membership I'm charged successfully but status shows Order in Progress. What is taking so long?",
+        "Unnamed: 5": "When I purchase a GeForce NOW membership I'm charged successfully but status shows Order in Progress. What is taking so long?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Why am I seeing a charge on my credit card statement for my GeForce NOW membership when the transaction cost was $0.00?",
+        "Unnamed: 5": "Why am I seeing a charge on my credit card statement for my GeForce NOW membership when the transaction cost was $0.00?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Can I run GeForce NOW on Android TV devices?",
+        "Unnamed: 5": "Can I run GeForce NOW on Android TV devices?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What are the system requirements for using GeForce NOW on my mobile device?",
+        "Unnamed: 5": "What are the system requirements for using GeForce NOW on my mobile device?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the GeForce NOW Android app work with external mice and keyboards?",
+        "Unnamed: 5": "Does the GeForce NOW Android app work with external mice and keyboards?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use multiple gamepads when using GeForce NOW on TVs?",
+        "Unnamed: 5": "Can I use multiple gamepads when using GeForce NOW on TVs?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Ubisoft game library sync automatically work with any new game I purchase?",
+        "Unnamed: 5": "Does Ubisoft game library sync automatically work with any new game I purchase?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do Fortnite replays work on GeForce NOW?",
+        "Unnamed: 5": "How do Fortnite replays work on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why can’t I play Fortnite on GeForce NOW on iOS or iPadOS?",
+        "Unnamed: 5": "Why can’t I play Fortnite on GeForce NOW on iOS or iPadOS?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Which TVs does GeForce NOW support?",
+        "Unnamed: 5": "Which TVs does GeForce NOW support?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the \"Remember my password\" option work for my Steam login?",
+        "Unnamed: 5": "Does the \"Remember my password\" option work for my Steam login?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why was I charged earlier than expected for my GeForce NOW membership?",
+        "Unnamed: 5": "Why was I charged earlier than expected for my GeForce NOW membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How many GeForce NOW game sessions can I launch at once?",
+        "Unnamed: 5": "How many GeForce NOW game sessions can I launch at once?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why am I charged twice a month for my GeForce NOW membership?",
+        "Unnamed: 5": "Why am I charged twice a month for my GeForce NOW membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "I play games on GeForce NOW on PC or Mac and they appear in under Library > Recently Played. Why do they not appear on the Recently Played section of the Android app?",
+        "Unnamed: 5": "I play games on GeForce NOW on PC or Mac and they appear in under Library > Recently Played. Why do they not appear on the Recently Played section of the Android app?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Which digital games stores are supported with Ubisoft Account linking on GeForce NOW?",
+        "Unnamed: 5": "Which digital games stores are supported with Ubisoft Account linking on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why do I want to link my NVIDIA and Ubisoft accounts for GeForce NOW?",
+        "Unnamed: 5": "Why do I want to link my NVIDIA and Ubisoft accounts for GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I purchase a GeForce NOW membership I'm charged successfully but I see an Activation Pending message. How do I fix this?",
+        "Unnamed: 5": "When I purchase a GeForce NOW membership I'm charged successfully but I see an Activation Pending message. How do I fix this?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the GeForce NOW Android app work with tablets and Chromebooks?",
+        "Unnamed: 5": "Does the GeForce NOW Android app work with tablets and Chromebooks?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I purchase an Ultimate membership on TVs?",
+        "Unnamed: 5": "Can I purchase an Ultimate membership on TVs?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I play games on GeForce NOW on PC or Mac and they appear under Library > Recently Played. Why do they not appear on the Recently Played section of the Android app?",
+        "Unnamed: 5": "I play games on GeForce NOW on PC or Mac and they appear under Library > Recently Played. Why do they not appear on the Recently Played section of the Android app?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does the GeForce NOW Android app support touch screen?",
+        "Unnamed: 5": "Does the GeForce NOW Android app support touch screen?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What is the cost of GeForce NOW memberships?",
+        "Unnamed: 5": "What is the cost of GeForce NOW memberships?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment",
+        "Unnamed: 8": "pendiente"
+    },
+    {
+        "Unnamed: 3": "If I am away from my keyboard, how long will I stay connected to the game?",
+        "Unnamed: 5": "If I am away from my keyboard, how long will I stay connected to the game?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "DOES GEFORCE NOW SUPPORT CAPTURING SCREENSHOTS IN-GAME USING STEAM’S SCREENSHOT CAPTURE UTILITY?",
+        "Unnamed: 5": "DOES GEFORCE NOW SUPPORT CAPTURING SCREENSHOTS IN-GAME USING STEAM’S SCREENSHOT CAPTURE UTILITY?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Are there any additional fees for a GeForce NOW Founder’s membership?",
+        "Unnamed: 5": "Are there any additional fees for a GeForce NOW Founder’s membership?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Does the GeForce NOW Android app work with tablets?",
+        "Unnamed: 5": "Does the GeForce NOW Android app work with tablets?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "DOES GEFORCE NOW SUPPORT COPYING TEXT FROM YOUR MAC OR WINDOWS DESKTOP AND PASTING IT INTO THE GAME WHEN STREAMING?",
+        "Unnamed: 5": "DOES GEFORCE NOW SUPPORT COPYING TEXT FROM YOUR MAC OR WINDOWS DESKTOP AND PASTING IT INTO THE GAME WHEN STREAMING?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Ubisoft Account linking on GeForce NOW work if I have two-factor authentication enabled on my Ubisoft account?",
+        "Unnamed: 5": "Does Ubisoft Account linking on GeForce NOW work if I have two-factor authentication enabled on my Ubisoft account?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use a browser besides Safari?",
+        "Unnamed: 5": "Can I use a browser besides Safari?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "If I subscribed to GeForce NOW from a GeForce NOW Alliance Partner Can I use GeForce NOW on my Chromebook?",
+        "Unnamed: 5": "If I subscribed to GeForce NOW from a GeForce NOW Alliance Partner Can I use GeForce NOW on my Chromebook?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Do the in-game settings that I configured on PC or macOS carry over to my Android phone?",
+        "Unnamed: 5": "Do the in-game settings that I configured on PC or macOS carry over to my Android phone?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Will the GeForce NOW membership pack games be available to play on the Android mobile app?",
+        "Unnamed: 5": "Will the GeForce NOW membership pack games be available to play on the Android mobile app?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Do the GeForce Now app settings that I made on PC and macOS carry over to my Android phone?",
+        "Unnamed: 5": "Do the GeForce Now app settings that I made on PC and macOS carry over to my Android phone?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use my Chromebook touchpad with GeForce NOW?",
+        "Unnamed: 5": "Can I use my Chromebook touchpad with GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use my ARM based Chromebook with GeForce NOW?",
+        "Unnamed: 5": "Can I use my ARM based Chromebook with GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why am I still asked to login to Ubisoft when my Ubisoft account is connected to my NVIDIA account?",
+        "Unnamed: 5": "Why am I still asked to login to Ubisoft when my Ubisoft account is connected to my NVIDIA account?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "Does the \"Remember my password\" option work for my Steam login?",
+        "Unnamed: 5": "Does the \"Remember my password\" option work for my Steam login?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "How does GeForce NOW resolution scaling work?",
+        "Unnamed: 5": "How does GeForce NOW resolution scaling work?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Which GPUs are supported on GeForce NOW?",
+        "Unnamed: 5": "Which GPUs are supported on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Is voice chat supported with GeForce NOW and how do I enable the microphone on GeForce NOW?",
+        "Unnamed: 5": "Is voice chat supported with GeForce NOW and how do I enable the microphone on GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I play when I travel to different countries?",
+        "Unnamed: 5": "Can I play when I travel to different countries?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Does Ubisoft Account linking sync the games I own on Ubisoft Connect and automatically add them to my GeForce NOW library?",
+        "Unnamed: 5": "Does Ubisoft Account linking sync the games I own on Ubisoft Connect and automatically add them to my GeForce NOW library?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "What web browsers can I use with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "What web browsers can I use with GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What are the system requirements to use GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "What are the system requirements to use GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Is the current GeForce NOW macOS app compatible with the new Macs that have the Apple M1 chip?",
+        "Unnamed: 5": "Is the current GeForce NOW macOS app compatible with the new Macs that have the Apple M1 chip?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I play GeForce NOW using my phone’s 4G or 5G connection?",
+        "Unnamed: 5": "Can I play GeForce NOW using my phone’s 4G or 5G connection?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHERE CAN I SEE THE LIST OF KNOWN ISSUES?",
+        "Unnamed: 5": "WHERE CAN I SEE THE LIST OF KNOWN ISSUES?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Are the GeForce NOW supported games on Chromebooks the same game library as on PC and macOS?",
+        "Unnamed: 5": "Are the GeForce NOW supported games on Chromebooks the same game library as on PC and macOS?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use a gamepad with my Chromebook when playing GeForce NOW?",
+        "Unnamed: 5": "Can I use a gamepad with my Chromebook when playing GeForce NOW?",
+        "Unnamed: 6": "FAQ",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am having trouble logging into digital stores, or games, when using GeForce NOW on iOS (iPhone) and iPadOS (iPad) because I need to type in my username and password. How do I fix this?",
+        "Unnamed: 5": "I am having trouble logging into digital stores, or games, when using GeForce NOW on iOS (iPhone) and iPadOS (iPad) because I need to type in my username and password. How do I fix this?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "How do I update my billing information for my GeForce NOW membership?",
+        "Unnamed: 5": "How do I update my billing information for my GeForce NOW membership?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "How do I test my network for GeForce NOW?",
+        "Unnamed: 5": "How do I test my network for GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I install GeForce NOW on Steam Deck?",
+        "Unnamed: 5": "How do I install GeForce NOW on Steam Deck?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I play supported Ubisoft games from Xbox PC Game Pass on GeForce NOW?",
+        "Unnamed: 5": "How do I play supported Ubisoft games from Xbox PC Game Pass on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I play supported Battle.net games from PC Game Pass on GeForce NOW?",
+        "Unnamed: 5": "How do I play supported Battle.net games from PC Game Pass on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 1": "PAG 16/35",
+        "Unnamed: 3": "How do I use the Game Session Diagnostic Tool on GeForce NOW?",
+        "Unnamed: 5": "How do I use the Game Session Diagnostic Tool on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What are the Highlights keyboard shortcuts?",
+        "Unnamed: 5": "What are the Highlights keyboard shortcuts?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I use GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "How do I use GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I use the Custom Streaming Quality settings on GeForce NOW?",
+        "Unnamed: 5": "How do I use the Custom Streaming Quality settings on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I create a Steam account to use with GeForce NOW?",
+        "Unnamed: 5": "How do I create a Steam account to use with GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "registro"
+    },
+    {
+        "Unnamed: 3": "What are the keyboard shortcuts when streaming GeForce NOW from Safari browsers on macOS?",
+        "Unnamed: 5": "What are the keyboard shortcuts when streaming GeForce NOW from Safari browsers on macOS?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I access the GeForce NOW network quality status?",
+        "Unnamed: 5": "How do I access the GeForce NOW network quality status?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I set up an Epic Games account and add games to my library to use with GeForce NOW?",
+        "Unnamed: 5": "How do I set up an Epic Games account and add games to my library to use with GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "registro"
+    },
+    {
+        "Unnamed: 3": "How do I link my NVIDIA and Ubisoft accounts?",
+        "Unnamed: 5": "How do I link my NVIDIA and Ubisoft accounts?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "Collecting GeForce NOW app logs when unable to send feedback (Windows)",
+        "Unnamed: 5": "Collecting GeForce NOW app logs when unable to send feedback (Windows)",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Reporting"
+    },
+    {
+        "Unnamed: 3": "I am using GeForce NOW on a TV. How do I input text to log into my digital games store account?",
+        "Unnamed: 5": "I am using GeForce NOW on a TV. How do I input text to log into my digital games store account?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "How can I delete my payment information on my GeForce NOW account?",
+        "Unnamed: 5": "How can I delete my payment information on my GeForce NOW account?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How do I use FreeStyle on GeForce NOW?",
+        "Unnamed: 5": "How do I use FreeStyle on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Recommended settings for the best Cyberpunk 2077 Phantom Liberty experience.",
+        "Unnamed: 5": "Recommended settings for the best Cyberpunk 2077 Phantom Liberty experience.",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What is the Epic Account Linking feature on GeForce NOW?",
+        "Unnamed: 5": "What is the Epic Account Linking feature on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I set up a Ubisoft account and add games to my library to use with GeForce NOW?",
+        "Unnamed: 5": "How do I set up a Ubisoft account and add games to my library to use with GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW DO I INSTALL A GAME WHEN USING GEFORCE NOW?",
+        "Unnamed: 5": "HOW DO I INSTALL A GAME WHEN USING GEFORCE NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I change my GeForce NOW Android mobile app streaming settings?",
+        "Unnamed: 5": "How do I change my GeForce NOW Android mobile app streaming settings?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I change a game’s resolution and graphics settings when playing it on GeForce NOW?",
+        "Unnamed: 5": "Can I change a game’s resolution and graphics settings when playing it on GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I type in-game with iOS (iPhone) or iPadOS (iPad) or Android devices when using GeForce NOW?",
+        "Unnamed: 5": "How do I type in-game with iOS (iPhone) or iPadOS (iPad) or Android devices when using GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What video format does NVIDIA Highlights use?",
+        "Unnamed: 5": "What video format does NVIDIA Highlights use?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "ASUS RAPTURE GT-AC2900 router setup for GeForce NOW",
+        "Unnamed: 5": "ASUS RAPTURE GT-AC2900 router setup for GeForce NOW",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW DO I GET BACK TO MY DESKTOP WITHOUT ENDING A GAME I AM PLAYING ON GEFORCE NOW?",
+        "Unnamed: 5": "HOW DO I GET BACK TO MY DESKTOP WITHOUT ENDING A GAME I AM PLAYING ON GEFORCE NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using GeForce NOW on a TV. How do I access a virtual keyboard and mouse?",
+        "Unnamed: 5": "I am using GeForce NOW on a TV. How do I access a virtual keyboard and mouse?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I play GeForce NOW on my Chromebook?",
+        "Unnamed: 5": "How can I play GeForce NOW on my Chromebook?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I check which version of the GeForce Now app I am running?",
+        "Unnamed: 5": "How do I check which version of the GeForce Now app I am running?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I check which version of the GeForce Now app I am running?",
+        "Unnamed: 5": "How do I check which version of the GeForce Now app I am running?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I quit a game on GeForce NOW and go back to the NVIDIA Games app ?",
+        "Unnamed: 5": "How do I quit a game on GeForce NOW and go back to the NVIDIA Games app ?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Where can I find the games I play frequently on GeForce NOW when using the Android app?",
+        "Unnamed: 5": "Where can I find the games I play frequently on GeForce NOW when using the Android app?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Where can I see my current GeForce NOW membership plan price?",
+        "Unnamed: 5": "Where can I see my current GeForce NOW membership plan price?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Where can I find the games I play frequently on GeForce NOW when using the Android app?",
+        "Unnamed: 5": "Where can I find the games I play frequently on GeForce NOW when using the Android app?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Download GeForce NOW",
+        "Unnamed: 5": "Download GeForce NOW",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I tell which GeForce NOW games are available on Xbox PC Game Pass?",
+        "Unnamed: 5": "How can I tell which GeForce NOW games are available on Xbox PC Game Pass?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What games on GeForce NOW support Highlights?",
+        "Unnamed: 5": "What games on GeForce NOW support Highlights?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I log into GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 5": "How do I log into GeForce NOW on iOS (iPhone) or iPadOS (iPad)?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW DO I LAUNCH AND PLAY A GAME?",
+        "Unnamed: 5": "HOW DO I LAUNCH AND PLAY A GAME?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I install GeForce NOW on Windows based Gaming Handhelds?",
+        "Unnamed: 5": "How do I install GeForce NOW on Windows based Gaming Handhelds?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I install GeForce NOW on Android Gaming Handhelds?",
+        "Unnamed: 5": "How do I install GeForce NOW on Android Gaming Handhelds?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I set up 2560x1440 or 2560x1600 and 120FPS streaming from a browser with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 5": "How can I set up 2560x1440 or 2560x1600 and 120FPS streaming from a browser with my GeForce NOW Ultimate Membership?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I adjust my network firewall to work with GeForce NOW?",
+        "Unnamed: 5": "How can I adjust my network firewall to work with GeForce NOW?",
+        "Unnamed: 6": "GUI",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I change the virtual keyboard language layout when using GeForce NOW on TVs?",
+        "Unnamed: 5": "How do I change the virtual keyboard language layout when using GeForce NOW on TVs?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I connect a wireless gamepad to my iOS (iPhone) or iPadOS (iPad) to use with GeForce NOW?",
+        "Unnamed: 5": "How do I connect a wireless gamepad to my iOS (iPhone) or iPadOS (iPad) to use with GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW CAN I SWITCH BETWEEN APPS WITHOUT ENDING A GAME I AM PLAYING ON GEFORCE NOW?",
+        "Unnamed: 5": "HOW CAN I SWITCH BETWEEN APPS WITHOUT ENDING A GAME I AM PLAYING ON GEFORCE NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I get the Android app?",
+        "Unnamed: 5": "How do I get the Android app?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I enable the in-game mic when using GeForce NOW on iOS (iPhone) and iPadOS (iPad)?",
+        "Unnamed: 5": "How do I enable the in-game mic when using GeForce NOW on iOS (iPhone) and iPadOS (iPad)?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I have enabled Epic Account linking on GeForce NOW, but Fortnite is still taking a long time to load. How do I enable Fortnite pre-loading?",
+        "Unnamed: 5": "I have enabled Epic Account linking on GeForce NOW, but Fortnite is still taking a long time to load. How do I enable Fortnite pre-loading?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I control my Discord Rich Presence when using GeForce NOW?",
+        "Unnamed: 5": "How can I control my Discord Rich Presence when using GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Submitting GeForce Now feedback on SHIELD TV",
+        "Unnamed: 5": "Submitting GeForce Now feedback on SHIELD TV",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I change the location of my Highlights Gallery to store videos to a cloud drive?",
+        "Unnamed: 5": "Can I change the location of my Highlights Gallery to store videos to a cloud drive?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "My GeForce NOW membership transaction has been declined. How do I fix this?",
+        "Unnamed: 5": "My GeForce NOW membership transaction has been declined. How do I fix this?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "HOW DO I MIGRATE MY NVIDIA GEFORCE NOW ACCOUNT TO GFN.RU?",
+        "Unnamed: 5": "HOW DO I MIGRATE MY NVIDIA GEFORCE NOW ACCOUNT TO GFN.RU?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 8": "pendiente"
+    },
+    {
+        "Unnamed: 3": "THE GAME I AM PLAYING REQUIRES ALT OR CTRL. HOW DO I PRESS THAT ON MY MAC?",
+        "Unnamed: 5": "THE GAME I AM PLAYING REQUIRES ALT OR CTRL. HOW DO I PRESS THAT ON MY MAC?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I cut/paste my login or password on iOS (iPhone) or iPadOS (iPad) to log in to the digital stores or game account on GeForce NOW?",
+        "Unnamed: 5": "Can I cut/paste my login or password on iOS (iPhone) or iPadOS (iPad) to log in to the digital stores or game account on GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using an LG or Samsung TVs to play games on GeForce NOW. How do I input text to search for games in the GeForce NOW app?",
+        "Unnamed: 5": "I am using an LG or Samsung TVs to play games on GeForce NOW. How do I input text to search for games in the GeForce NOW app?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I cancel my preorder GeForce RTX 3080 membership?",
+        "Unnamed: 5": "How do I cancel my preorder GeForce RTX 3080 membership?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Can I use a non-US keyboard to play GeForce NOW on SHIELD?",
+        "Unnamed: 5": "Can I use a non-US keyboard to play GeForce NOW on SHIELD?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "THE GAME I AM PLAYING REQUIRES FUNCTION KEYS. HOW DO I PRESS THEM ON MY MAC?",
+        "Unnamed: 5": "THE GAME I AM PLAYING REQUIRES FUNCTION KEYS. HOW DO I PRESS THEM ON MY MAC?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I press the “View” or “Share” button on my gamepad when using GeForce NOW on iOS (iPhone) or iPadOS (iPad)? It takes a screenshot, or records the screen, and isn’t recognized by the game.",
+        "Unnamed: 5": "How can I press the “View” or “Share” button on my gamepad when using GeForce NOW on iOS (iPhone) or iPadOS (iPad)? It takes a screenshot, or records the screen, and isn’t recognized by the game.",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I use the Steam Deck’s trackpad as a mouse when playing games on GeForce NOW?",
+        "Unnamed: 5": "Can I use the Steam Deck’s trackpad as a mouse when playing games on GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I see my GeForce NOW billing history?",
+        "Unnamed: 5": "How can I see my GeForce NOW billing history?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I tell I am running the latest version of TV firmware required to use GeForce NOW?",
+        "Unnamed: 5": "How can I tell I am running the latest version of TV firmware required to use GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Do password managers on iOS (iPhone) or iPadOS (iPad) let me log in to the digital stores or game account on GeForce NOW?",
+        "Unnamed: 5": "Do password managers on iOS (iPhone) or iPadOS (iPad) let me log in to the digital stores or game account on GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "HOW DO I QUIT A GAME QUICKLY?",
+        "Unnamed: 5": "HOW DO I QUIT A GAME QUICKLY?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I press function keys like F1 when using GeForce NOW on a Chromebook?",
+        "Unnamed: 5": "How can I press function keys like F1 when using GeForce NOW on a Chromebook?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I press function keys like F6 when using GeForce NOW on a Chromebook?",
+        "Unnamed: 5": "How do I press function keys like F6 when using GeForce NOW on a Chromebook?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I tell which games I own after linking my NVIDIA and Ubisoft account?",
+        "Unnamed: 5": "How can I tell which games I own after linking my NVIDIA and Ubisoft account?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I see two options for Ubisoft Connect in the GeForce NOW app. Which one do I choose?",
+        "Unnamed: 5": "I see two options for Ubisoft Connect in the GeForce NOW app. Which one do I choose?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I quit a game on GeForce NOW when playing on TVs?",
+        "Unnamed: 5": "How do I quit a game on GeForce NOW when playing on TVs?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I share analytics with NVIDIA to help improve GeForce NOW?",
+        "Unnamed: 5": "How can I share analytics with NVIDIA to help improve GeForce NOW?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I quit a game on GeForce NOW when playing on TVs?",
+        "Unnamed: 5": "How do I quit a game on GeForce NOW when playing on TVs?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I unlink my NVIDIA and Ubisoft Accounts?",
+        "Unnamed: 5": "How do I unlink my NVIDIA and Ubisoft Accounts?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Can I change my GeForce NOW monthly billing date?",
+        "Unnamed: 5": "Can I change my GeForce NOW monthly billing date?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How can I exit the screensaver on my TV if it started while inside the GeForce NOW application?",
+        "Unnamed: 5": "How can I exit the screensaver on my TV if it started while inside the GeForce NOW application?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I upgrade from a GeForce NOW Free membership to a Founders membership using the iOS (iPhone) or iPadOS (iPad) app?",
+        "Unnamed: 5": "How do I upgrade from a GeForce NOW Free membership to a Founders membership using the iOS (iPhone) or iPadOS (iPad) app?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "I am trying to sign up for a paid GeForce NOW membership and my credit card is declined even though I have sufficient balance?",
+        "Unnamed: 5": "I am trying to sign up for a paid GeForce NOW membership and my credit card is declined even though I have sufficient balance?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "I am signing up for a paid GeForce NOW membership. Why am I seeing charges when I only signed-up for the free trial?",
+        "Unnamed: 5": "I am signing up for a paid GeForce NOW membership. Why am I seeing charges when I only signed-up for the free trial?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How can I change my GeForce NOW membership plan?",
+        "Unnamed: 5": "How can I change my GeForce NOW membership plan?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "How do I update my billing information for my GeForce NOW membership?",
+        "Unnamed: 5": "How do I update my billing information for my GeForce NOW membership?",
+        "Unnamed: 6": "PRC",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "Security Bulletin: NVIDIA GeForce NOW for Android - August 2023",
+        "Unnamed: 5": "Security Bulletin: NVIDIA GeForce NOW for Android - August 2023",
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": "Reporting"
+    },
+    {
+        "Unnamed: 3": "Security Notice: NVIDIA Response to Log4j Vulnerabilities - December 2021",
+        "Unnamed: 5": "Security Notice: NVIDIA Response to Log4j Vulnerabilities - December 2021",
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Security Bulletin: NVIDIA GeForce NOW - September 2020",
+        "Unnamed: 5": "Security Bulletin: NVIDIA GeForce NOW - September 2020",
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Security Bulletin: NVIDIA GeForce NOW - November 2020",
+        "Unnamed: 5": "Security Bulletin: NVIDIA GeForce NOW - November 2020",
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Security Bulletin: NVIDIA GeForce NOW for Android - August 2023",
+        "Unnamed: 5": "Security Bulletin: NVIDIA GeForce NOW for Android - August 2023",
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHEN I LOG IN TO STEAM OR TRY TO LAUNCH A GAME I AM PROMPTED WITH A STEAM GUARD SECURITY CHECK OR A BLIZZARD SECURITY CHECK. IS THIS NORMAL?",
+        "Unnamed: 5": "WHEN I LOG IN TO STEAM OR TRY TO LAUNCH A GAME I AM PROMPTED WITH A STEAM GUARD SECURITY CHECK OR A BLIZZARD SECURITY CHECK. IS THIS NORMAL?",
+        "Unnamed: 6": "SEC",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "How to request a new game be added to GeForce NOW",
+        "Unnamed: 5": "How to request a new game be added to GeForce NOW",
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "Reporting"
+    },
+    {
+        "Unnamed: 3": "Submitting feedback through Geforce Experience, GeForce Now or SHIELD.",
+        "Unnamed: 5": "Submitting feedback through Geforce Experience, GeForce Now or SHIELD.",
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "Reporting"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW Alliance Partner Game+",
+        "Unnamed: 5": "GeForce NOW Alliance Partner Game+",
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW alliance partner ABYA",
+        "Unnamed: 5": "GeForce NOW alliance partner ABYA",
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "After registering for a new NVIDIA Account, I never received my verification email.",
+        "Unnamed: 5": "After registering for a new NVIDIA Account, I never received my verification email.",
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "registro"
+    },
+    {
+        "Unnamed: 3": "I FOUND A BUG, WHERE DO I GO TO REPORT IT?",
+        "Unnamed: 5": "I FOUND A BUG, WHERE DO I GO TO REPORT IT?",
+        "Unnamed: 6": "SUP",
+        "Unnamed: 7": "Reporting"
+    },
+    {
+        "Unnamed: 3": "When I start a game, a GeForce NOW dialog box appears recommending I use a gamepad. I already have one attached via bluetooth. How do I fix this?",
+        "Unnamed: 5": "When I start a game, a GeForce NOW dialog box appears recommending I use a gamepad. I already have one attached via bluetooth. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "My GeForce NOW membership transaction has been declined. How do I fix this?",
+        "Unnamed: 5": "My GeForce NOW membership transaction has been declined. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "When I purchase a GeForce NOW membership I'm charged successfully but I see an Activation Pending message. How do I fix this?",
+        "Unnamed: 5": "When I purchase a GeForce NOW membership I'm charged successfully but I see an Activation Pending message. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "invoice"
+    },
+    {
+        "Unnamed: 3": "My gamepad is not detected or is not working with GeForce NOW on Chromebook. How can I see if my gamepad is being detected by ChromeOS?",
+        "Unnamed: 5": "My gamepad is not detected or is not working with GeForce NOW on Chromebook. How can I see if my gamepad is being detected by ChromeOS?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Reporting"
+    },
+    {
+        "Unnamed: 3": "The GeForce NOW Mac or PC apps indicates it needs an update. How do I manually update it?",
+        "Unnamed: 5": "The GeForce NOW Mac or PC apps indicates it needs an update. How do I manually update it?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What can I do when the NVIDIA GeForce NOW software installation fails?",
+        "Unnamed: 5": "What can I do when the NVIDIA GeForce NOW software installation fails?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am unable to load ads when using GeForce NOW? How do I fix this?",
+        "Unnamed: 5": "I am unable to load ads when using GeForce NOW? How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHEN I TRY TO LAUNCH A GAME ON GEFORCE NOW FOR MAC, I GET AN ERROR MESSAGE WITH CODE 0x800B0016. HOW CAN I FIX THAT?",
+        "Unnamed: 5": "WHEN I TRY TO LAUNCH A GAME ON GEFORCE NOW FOR MAC, I GET AN ERROR MESSAGE WITH CODE 0x800B0016. HOW CAN I FIX THAT?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I upgraded my macOS to 10.15 Catalina and I am getting a different mouse experience now with GeForce NOW. How can I fix it?",
+        "Unnamed: 5": "I upgraded my macOS to 10.15 Catalina and I am getting a different mouse experience now with GeForce NOW. How can I fix it?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I have purchased Ubisoft Games on Epic Games Store but they are not showing up in “My Library” after linking my Ubisoft account. How do I fix this?",
+        "Unnamed: 5": "I have purchased Ubisoft Games on Epic Games Store but they are not showing up in “My Library” after linking my Ubisoft account. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "My GeForce NOW app is not updating to the latest version. How can I fix that?",
+        "Unnamed: 5": "My GeForce NOW app is not updating to the latest version. How can I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using a Bluetooth headset with GeForce NOW and the in-game audio quality is worse than when I listen to music or watch a video. How do I fix that?",
+        "Unnamed: 5": "I am using a Bluetooth headset with GeForce NOW and the in-game audio quality is worse than when I listen to music or watch a video. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I AM ON A MAC AND I AM GETTING BAD LAG EVERY 5 OR 10 MINS PLAYING ON GEFORCE NOW. HOW CAN I FIX THIS?",
+        "Unnamed: 5": "I AM ON A MAC AND I AM GETTING BAD LAG EVERY 5 OR 10 MINS PLAYING ON GEFORCE NOW. HOW CAN I FIX THIS?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why do I need to sign in to my Xbox account each time I launch a game on GeForce NOW?",
+        "Unnamed: 5": "Why do I need to sign in to my Xbox account each time I launch a game on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "My gamepad is not detected or is not working with GeForce NOW on Chromebook. How can I see if my gamepad is being detected by ChromeOS?",
+        "Unnamed: 5": "My gamepad is not detected or is not working with GeForce NOW on Chromebook. How can I see if my gamepad is being detected by ChromeOS?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "After editing the Steam Launch Options through GeForce NOW, I am receiving error 0x000001F5 when attempting to start any Steam game.",
+        "Unnamed: 5": "After editing the Steam Launch Options through GeForce NOW, I am receiving error 0x000001F5 when attempting to start any Steam game.",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using my Chromebook to play GeForce NOW and am getting bad gameplay experiences including stuttery video and my mouse is not responsive. How do I fix this?",
+        "Unnamed: 5": "I am using my Chromebook to play GeForce NOW and am getting bad gameplay experiences including stuttery video and my mouse is not responsive. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why is the GeForce NOW app on loading slowly and/or the game stream keeps freezing on my iPhone?",
+        "Unnamed: 5": "Why is the GeForce NOW app on loading slowly and/or the game stream keeps freezing on my iPhone?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I have enabled Epic Account linking on GeForce NOW, but I am still asked to log in to Epic Games to play some games.",
+        "Unnamed: 5": "I have enabled Epic Account linking on GeForce NOW, but I am still asked to log in to Epic Games to play some games.",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "My gamepad is not working on iOS (iPhone) or iPadOS (iPad) when using GeForce NOW. How can I fix this?",
+        "Unnamed: 5": "My gamepad is not working on iOS (iPhone) or iPadOS (iPad) when using GeForce NOW. How can I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "My gamepad is not working on iOS (iPhone) or iPadOS (iPad) when using GeForce NOW. How can I fix this?",
+        "Unnamed: 5": "My gamepad is not working on iOS (iPhone) or iPadOS (iPad) when using GeForce NOW. How can I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When playing a game on iOS (iPhone) or iPadOS (iPad), my game window looks cropped, some portion of the game window is missing, or the game appears to be zoomed in. How can I fix this?",
+        "Unnamed: 5": "When playing a game on iOS (iPhone) or iPadOS (iPad), my game window looks cropped, some portion of the game window is missing, or the game appears to be zoomed in. How can I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "What should I do if I see “Account connection failed” when connecting my Xbox account on GeForce NOW?",
+        "Unnamed: 5": "What should I do if I see “Account connection failed” when connecting my Xbox account on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using a system with GeForce Experience and GeForce NOW installed and I am activating both In-Game Overlays at the same time. How do I fix that?",
+        "Unnamed: 5": "I am using a system with GeForce Experience and GeForce NOW installed and I am activating both In-Game Overlays at the same time. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why is my game streaming session stuck on the NVIDIA logo or black screen when using GeForce NOW on my Android phone, tablet, or Android TV device?",
+        "Unnamed: 5": "Why is my game streaming session stuck on the NVIDIA logo or black screen when using GeForce NOW on my Android phone, tablet, or Android TV device?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I play God of War on GeForce NOW and other gaming PCs, and switch the default adapter. Every time I try playing it on GeForce NOW I get messages about problems with my cloud saves or the game showing me black screen. How do I fix that?",
+        "Unnamed: 5": "I play God of War on GeForce NOW and other gaming PCs, and switch the default adapter. Every time I try playing it on GeForce NOW I get messages about problems with my cloud saves or the game showing me black screen. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why does my game fail to launch on GeForce NOW if a Steam Workshop mod is installed, like Post Sciptum or Squad?",
+        "Unnamed: 5": "Why does my game fail to launch on GeForce NOW if a Steam Workshop mod is installed, like Post Sciptum or Squad?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I see the address bar or toolbar when I use GeForce NOW on iOS. How can I improve my experience?",
+        "Unnamed: 5": "I see the address bar or toolbar when I use GeForce NOW on iOS. How can I improve my experience?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Baldur's Gate 3 saves problem on Geforce NOW",
+        "Unnamed: 5": "Baldur's Gate 3 saves problem on Geforce NOW",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why are there black bars on the sides of the screen when I use GeForce NOW on my Android device?",
+        "Unnamed: 5": "Why are there black bars on the sides of the screen when I use GeForce NOW on my Android device?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why are there black bars on the side of the screen when I use GeForce NOW on my Android device?",
+        "Unnamed: 5": "Why are there black bars on the side of the screen when I use GeForce NOW on my Android device?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am playing The Finals on GeForce NOW and I am experiencing a long black screen during the game start. How do I fix that?",
+        "Unnamed: 5": "I am playing The Finals on GeForce NOW and I am experiencing a long black screen during the game start. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why isn’t my keyboard or mouse working when streaming on the GeForce NOW Android app?",
+        "Unnamed: 5": "Why isn’t my keyboard or mouse working when streaming on the GeForce NOW Android app?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I cannot connect to play.geforcenow.com to use GeForce NOW on my Chromebook. How do I fix this?",
+        "Unnamed: 5": "I cannot connect to play.geforcenow.com to use GeForce NOW on my Chromebook. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why is my gamepad not working on my Android 11 based phone, tablet, or TV device when using GeForce NOW?",
+        "Unnamed: 5": "Why is my gamepad not working on my Android 11 based phone, tablet, or TV device when using GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am trying to log in to a digital store, or game, on GeForce NOW using my Google Account and cannot. How do I fix this?",
+        "Unnamed: 5": "I am trying to log in to a digital store, or game, on GeForce NOW using my Google Account and cannot. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW quit unexpectedly on macOS",
+        "Unnamed: 5": "GeForce NOW quit unexpectedly on macOS",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Certain keyboard shortcuts do not work on GeForce NOW when playing on a Steam Deck with an external keyboard. How can I fix that?",
+        "Unnamed: 5": "Certain keyboard shortcuts do not work on GeForce NOW when playing on a Steam Deck with an external keyboard. How can I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHY DO I SEE A MESSAGE FROM STEAM ABOUT A CLOUD SYNC CONFLICT WHEN I LAUNCH A GAME?",
+        "Unnamed: 5": "WHY DO I SEE A MESSAGE FROM STEAM ABOUT A CLOUD SYNC CONFLICT WHEN I LAUNCH A GAME?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why can’t I link my NVIDIA and Epic accounts to play GeForce NOW?",
+        "Unnamed: 5": "Why can’t I link my NVIDIA and Epic accounts to play GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am not able to type “@” in the dialog when streaming with GeForce NOW on Chromebook. How do I fix that?",
+        "Unnamed: 5": "I am not able to type “@” in the dialog when streaming with GeForce NOW on Chromebook. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am unable to sync my NVIDIA and Xbox accounts after revoking/removing permissions for GeForce NOW through the Microsoft account portal. How do I fix it?",
+        "Unnamed: 5": "I am unable to sync my NVIDIA and Xbox accounts after revoking/removing permissions for GeForce NOW through the Microsoft account portal. How do I fix it?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When playing God of War on GeForce NOW, if I select the \"Microsoft Basic Renderer Device\" and restart the game I see a black screen or very slow rolling game intro. How do I fix this?",
+        "Unnamed: 5": "When playing God of War on GeForce NOW, if I select the \"Microsoft Basic Renderer Device\" and restart the game I see a black screen or very slow rolling game intro. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using GeForce NOW on Microsoft Edge browser but my gamepad is not working as expected. How do I fix this?",
+        "Unnamed: 5": "I am using GeForce NOW on Microsoft Edge browser but my gamepad is not working as expected. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am getting 0xC0F22206 error on my iPhone/iPad when I try to start a game. How do I fix this?",
+        "Unnamed: 5": "I am getting 0xC0F22206 error on my iPhone/iPad when I try to start a game. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why am I unable to stream GeForce NOW on Android at 120 FPS (120Hz) even though my device supports it and 120 FPS is selected in the GeForce NOW settings?",
+        "Unnamed: 5": "Why am I unable to stream GeForce NOW on Android at 120 FPS (120Hz) even though my device supports it and 120 FPS is selected in the GeForce NOW settings?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "WHY AM I ASKED TO UPDATE A GAME WHEN I LAUNCH IT? I THOUGHT YOU KEPT ALL GAMES PATCHED?",
+        "Unnamed: 5": "WHY AM I ASKED TO UPDATE A GAME WHEN I LAUNCH IT? I THOUGHT YOU KEPT ALL GAMES PATCHED?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "My game session crashes when launching The Witcher 3 or Cyberpunk 2077 on GeForce NOW. How do I fix this?",
+        "Unnamed: 5": "My game session crashes when launching The Witcher 3 or Cyberpunk 2077 on GeForce NOW. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When using GeForce NOW on TVs, why does my gamepad or TV remote sometimes stop working when no element is selected in the GeForce NOW app?",
+        "Unnamed: 5": "When using GeForce NOW on TVs, why does my gamepad or TV remote sometimes stop working when no element is selected in the GeForce NOW app?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why can’t I play the Origin versions of Electronic Arts games on GeForce NOW?",
+        "Unnamed: 5": "Why can’t I play the Origin versions of Electronic Arts games on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am a GFN.RU customer and I am having problems logging into the GeForce NOW app. How do I fix that?",
+        "Unnamed: 5": "I am a GFN.RU customer and I am having problems logging into the GeForce NOW app. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app",
+        "Unnamed: 8": "pendiente"
+    },
+    {
+        "Unnamed: 3": "How do I enable ray tracing on GeForce NOW when playing RTX games?",
+        "Unnamed: 5": "How do I enable ray tracing on GeForce NOW when playing RTX games?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using a 5GHz WiFi network connection when using GeForce NOW on TVs and I see frequent \"Spotty Connection\" notifications. How can I fix that?",
+        "Unnamed: 5": "I am using a 5GHz WiFi network connection when using GeForce NOW on TVs and I see frequent \"Spotty Connection\" notifications. How can I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why is default GeForce NOW streaming at resolution 720p to my mobile device?",
+        "Unnamed: 5": "Why is default GeForce NOW streaming at resolution 720p to my mobile device?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I play Fortnite if I cannot link my Epic and NVIDIA accounts?",
+        "Unnamed: 5": "How can I play Fortnite if I cannot link my Epic and NVIDIA accounts?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why is my mouse overshooting, or is not moving fluidly when I use GeForce NOW on my Chromebook?",
+        "Unnamed: 5": "Why is my mouse overshooting, or is not moving fluidly when I use GeForce NOW on my Chromebook?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I have an EA Play or EA Play Pro membership and when I first play an Electronic Arts game I see that a small game update is required to play. How do I fix that?",
+        "Unnamed: 5": "I have an EA Play or EA Play Pro membership and when I first play an Electronic Arts game I see that a small game update is required to play. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am having trouble logging into digital stores, or games, when using GeForce NOW on iOS (iPhone) and iPadOS (iPad) because I need to type in my username and password. How do I fix this?",
+        "Unnamed: 5": "I am having trouble logging into digital stores, or games, when using GeForce NOW on iOS (iPhone) and iPadOS (iPad) because I need to type in my username and password. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am trying to login to a digital store or game launcher and I cannot input the “@” symbol. How do I fix that?",
+        "Unnamed: 5": "I am trying to login to a digital store or game launcher and I cannot input the “@” symbol. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I enable RTX in Far Cry 6 or Bright Memory: Infinite on GeForce NOW?",
+        "Unnamed: 5": "How do I enable RTX in Far Cry 6 or Bright Memory: Infinite on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "My Chromebook keyboard layout is not automatically detected during my game session. How do I fix that?",
+        "Unnamed: 5": "My Chromebook keyboard layout is not automatically detected during my game session. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am trying to play Dead Island 2 on GeForce NOW and the game is stuck at Connecting to Epic Online Services. How do I fix it?",
+        "Unnamed: 5": "I am trying to play Dead Island 2 on GeForce NOW and the game is stuck at Connecting to Epic Online Services. How do I fix it?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am a GeForce NOW Ultimate member connecting to an RTX 4080 gaming rig with more latency than I had when connecting to RTX 3080 gaming rigs. How can I fix this?",
+        "Unnamed: 5": "I am a GeForce NOW Ultimate member connecting to an RTX 4080 gaming rig with more latency than I had when connecting to RTX 3080 gaming rigs. How can I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using GeForce NOW on Chromebook and In-game voice chat is not working. How do I fix this?",
+        "Unnamed: 5": "I am using GeForce NOW on Chromebook and In-game voice chat is not working. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I switch to another application and then resume game play with GeForce NOW on iOS (iPhone) and iPadOS (iPad), I hear audio corruption for 1-2 seconds. How do I fix this?",
+        "Unnamed: 5": "When I switch to another application and then resume game play with GeForce NOW on iOS (iPhone) and iPadOS (iPad), I hear audio corruption for 1-2 seconds. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How can I be prepared to play Baldur’s Gate 3 on launch day on GeForce NOW?",
+        "Unnamed: 5": "How can I be prepared to play Baldur’s Gate 3 on launch day on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "The Discord Rich Presence isn’t working the way I expected when I play games on GeForce NOW. Why?",
+        "Unnamed: 5": "The Discord Rich Presence isn’t working the way I expected when I play games on GeForce NOW. Why?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am stuck on a gray screen when trying to launch games on GeForce NOW. How do I fix this?",
+        "Unnamed: 5": "I am stuck on a gray screen when trying to launch games on GeForce NOW. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am playing an Electronic Arts game and sometimes the game launches are minimized. How do I fix that?",
+        "Unnamed: 5": "I am playing an Electronic Arts game and sometimes the game launches are minimized. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I'm on a Chromebook and tapping my touchpad doesn't register a click in GeForce NOW",
+        "Unnamed: 5": "I'm on a Chromebook and tapping my touchpad doesn't register a click in GeForce NOW",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I connect to play.geforcenow.com on my iPhone or iPad, why do I see an unsupported device message even though my iOS/iPadOS version is up-to-date?",
+        "Unnamed: 5": "When I connect to play.geforcenow.com on my iPhone or iPad, why do I see an unsupported device message even though my iOS/iPadOS version is up-to-date?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When playing games with GeForce NOW on iOS or iPadOS I see a white bar at the bottom of the screen. How do I get rid of that?",
+        "Unnamed: 5": "When playing games with GeForce NOW on iOS or iPadOS I see a white bar at the bottom of the screen. How do I get rid of that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I use mic, the volume drops with GeForce NOW on iOS (iPhone) and iPadOS (iPad). How do I fix that?",
+        "Unnamed: 5": "When I use mic, the volume drops with GeForce NOW on iOS (iPhone) and iPadOS (iPad). How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I launch Far Cry 6 on GeForce NOW I see a warning message that the operating system is out of date. How do I fix that?",
+        "Unnamed: 5": "When I launch Far Cry 6 on GeForce NOW I see a warning message that the operating system is out of date. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I manually added the GeForce NOW app to the Discord app and now my friends are not seeing my activity. Is something broken?",
+        "Unnamed: 5": "I manually added the GeForce NOW app to the Discord app and now my friends are not seeing my activity. Is something broken?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW game audio is too low when mic is enabled. How do I fix it?",
+        "Unnamed: 5": "GeForce NOW game audio is too low when mic is enabled. How do I fix it?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I start a game, a GeForce NOW dialog box appears recommending I use a gamepad. I already have one attached via bluetooth. How do I fix this?",
+        "Unnamed: 5": "When I start a game, a GeForce NOW dialog box appears recommending I use a gamepad. I already have one attached via bluetooth. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am a Ubisoft+ subscriber and when I press SYNC or RESYNC in the GeForce NOW app, not all Ubisoft+ games are added to my library. How do I fix that?",
+        "Unnamed: 5": "I am a Ubisoft+ subscriber and when I press SYNC or RESYNC in the GeForce NOW app, not all Ubisoft+ games are added to my library. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I purchased Far Cry 6 on the Epic Games Store, and I do not see that store version in the GeForce NOW app. How do I play the game?",
+        "Unnamed: 5": "I purchased Far Cry 6 on the Epic Games Store, and I do not see that store version in the GeForce NOW app. How do I play the game?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why does my TV sometimes stop pairing with an already paired controller after powering on?",
+        "Unnamed: 5": "Why does my TV sometimes stop pairing with an already paired controller after powering on?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "If I receive any type of call on my iPhone/iPad and reject it when streaming a GeForce NOW game, the screen turns black and the game does not recover. How do I fix this?",
+        "Unnamed: 5": "If I receive any type of call on my iPhone/iPad and reject it when streaming a GeForce NOW game, the screen turns black and the game does not recover. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am unable to see my mouse cursor when playing Backpack Battles on GeForce NOW. How do I fix this?",
+        "Unnamed: 5": "I am unable to see my mouse cursor when playing Backpack Battles on GeForce NOW. How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I enable mic permission using GeForce NOW on iOS (iPhone) and iPadOS (iPad), the speaker or headphone volume drops. How do I fix that?",
+        "Unnamed: 5": "When I enable mic permission using GeForce NOW on iOS (iPhone) and iPadOS (iPad), the speaker or headphone volume drops. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I load the high resolution texture pack for Far Cry 6 on GeForce NOW?",
+        "Unnamed: 5": "How do I load the high resolution texture pack for Far Cry 6 on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why did my Electronic Arts game disappear from my GeForce NOW library?",
+        "Unnamed: 5": "Why did my Electronic Arts game disappear from my GeForce NOW library?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I use two fingers to pinch on iOS (iPhone) or iPadOS (iPad) to see other running apps, the gamepad stops working with GeForce NOW. How do I fix that?",
+        "Unnamed: 5": "When I use two fingers to pinch on iOS (iPhone) or iPadOS (iPad) to see other running apps, the gamepad stops working with GeForce NOW. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am running Windows, with multiple language keyboards installed, and sometimes I am having trouble bringing up the Highlights in-game overlay (IGO). How do I fix this?",
+        "Unnamed: 5": "I am running Windows, with multiple language keyboards installed, and sometimes I am having trouble bringing up the Highlights in-game overlay (IGO). How do I fix this?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using the NVIDIA SHIELD “Thunderstrike” controller, and I cannot shoot in Far Cry 6 when pressing the left and right triggers. How do I fix that?",
+        "Unnamed: 5": "I am using the NVIDIA SHIELD “Thunderstrike” controller, and I cannot shoot in Far Cry 6 when pressing the left and right triggers. How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am running iOS/iPadOS 15 or 15.1 and I am experiencing loss of audio in GeForce NOW.  How do I fix it?",
+        "Unnamed: 5": "I am running iOS/iPadOS 15 or 15.1 and I am experiencing loss of audio in GeForce NOW.  How do I fix it?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I use Discord, or other 3rd party chat apps, the volume drops with GeForce NOW on iOS (iPhone) and iPadOS (iPad). How do I fix that?",
+        "Unnamed: 5": "When I use Discord, or other 3rd party chat apps, the volume drops with GeForce NOW on iOS (iPhone) and iPadOS (iPad). How do I fix that?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "When I launch Roller Champions on GeForce NOW I am asked to enter an activation key. How do I activate the game?",
+        "Unnamed: 5": "When I launch Roller Champions on GeForce NOW I am asked to enter an activation key. How do I activate the game?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am running iOS/iPadOS 15+ and I am experiencing extremely high audio latency during streaming and/or after resuming a GeForce NOW session?",
+        "Unnamed: 5": "I am running iOS/iPadOS 15+ and I am experiencing extremely high audio latency during streaming and/or after resuming a GeForce NOW session?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I own a Ubisoft game that is supported on GeForce NOW but I do not see the game in “My Library” after linking my Ubisoft account. What is going on?",
+        "Unnamed: 5": "I own a Ubisoft game that is supported on GeForce NOW but I do not see the game in “My Library” after linking my Ubisoft account. What is going on?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "login"
+    },
+    {
+        "Unnamed: 3": "Why am I still asked to login to Ubisoft when my Ubisoft account is connected to my NVIDIA account?",
+        "Unnamed: 5": "Why am I still asked to login to Ubisoft when my Ubisoft account is connected to my NVIDIA account?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why do the colors on Samsung TVs look oversaturated when playing on GeForce NOW?",
+        "Unnamed: 5": "Why do the colors on Samsung TVs look oversaturated when playing on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why are more games showing up “Patching” on GeForce NOW?",
+        "Unnamed: 5": "Why are more games showing up “Patching” on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Why do I get the message “Too Many Computers Have Access This Account…” when trying to play Electronic Arts games on GeForce NOW?",
+        "Unnamed: 5": "Why do I get the message “Too Many Computers Have Access This Account…” when trying to play Electronic Arts games on GeForce NOW?",
+        "Unnamed: 6": "TRB",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "I am using Highlights and I experiencing degraded game streaming performance. How do I fix that?",
+        "Unnamed: 5": "I am using Highlights and I experiencing degraded game streaming performance. How do I fix that?",
+        "Unnamed: 6": "TRN",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "How do I enable NVIDIA Highlights on GeForce NOW?",
+        "Unnamed: 5": "How do I enable NVIDIA Highlights on GeForce NOW?",
+        "Unnamed: 6": "TUT",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "GeForce NOW Game Disconnects in ABYA South America Zone Fixed",
+        "Unnamed: 5": "GeForce NOW Game Disconnects in ABYA South America Zone Fixed",
+        "Unnamed: 6": "UDP",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "List of expired Membership games on GEFORCE NOW",
+        "Unnamed: 5": "List of expired Membership games on GEFORCE NOW",
+        "Unnamed: 6": "UDP",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Price Change And Grandfathering | October 2023",
+        "Unnamed: 5": "Price Change And Grandfathering | October 2023",
+        "Unnamed: 6": "UPD",
+        "Unnamed: 7": "payment"
+    },
+    {
+        "Unnamed: 3": "NVIDIA Highlights now available in GeForce NOW",
+        "Unnamed: 5": "NVIDIA Highlights now available in GeForce NOW",
+        "Unnamed: 6": "UPD",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "Patching in GeForce NOW",
+        "Unnamed: 5": "Patching in GeForce NOW",
+        "Unnamed: 6": "UPD",
+        "Unnamed: 7": "Nvidia app"
+    },
+    {
+        "Unnamed: 3": "The GeForce NOW Mac or PC apps indicates it needs an update. How do I manually update it?",
+        "Unnamed: 5": "The GeForce NOW Mac or PC apps indicates it needs an update. How do I manually update it?",
+        "Unnamed: 6": "UPD",
+        "Unnamed: 7": "Nvidia app"
+    }
+]
